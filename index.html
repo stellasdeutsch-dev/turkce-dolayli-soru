@@ -1,0 +1,1213 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>gelip gelmeyeceğini sordu · Косвенный вопрос в турецком</title>
+<meta name="description" content="B2-09. Косвенный вопрос в турецком: gelip gelmeyeceğini sordu. Пара «да-нет», -DIK и -AcAK, лица, падежи, olup olmadığını, тест.">
+<meta property="og:title" content="gelip gelmeyeceğini sordu">
+<meta property="og:description" content="Косвенный вопрос в турецком. Пара «да-нет» вместо русского «ли».">
+<meta name="theme-color" content="#B6F23C">
+<link rel="preload" href="assets/fonts/onest-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/comfortaa-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/grandstander-latin-ext.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css">
+<script defer src="assets/gsap-bundle.min.js"></script>
+<style>
+:root{
+  --purple:#9867F9; --deep:#5B2BB5; --pink:#FF93EF; --coral:#FF7664; --yellow:#FFD500;
+  --lime:#B6F23C; --green:#14C25A; --sand:#FFEBC9; --concrete:#F0F0EE; --ink:#2F2C31; --white:#fff;
+  --r:30px;
+  --f-body:'Onest',system-ui,sans-serif; --f-round:'Comfortaa','Onest',sans-serif; --f-fun:'Grandstander','Onest',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--concrete);color:var(--ink);font:400 17px/1.5 var(--f-body);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+button{font:inherit;color:inherit;cursor:pointer;-webkit-tap-highlight-color:transparent}
+a{color:inherit}
+.tr{font-style:normal;font-weight:600}
+.wrap{max-width:640px;margin:0 auto;position:relative}
+section{position:relative;overflow:hidden;padding:84px 20px}
+.bg-lime{background:var(--lime)} .bg-green{background:var(--green)} .bg-purple{background:var(--purple);color:#fff}
+.bg-deep{background:var(--deep);color:#fff} .bg-pink{background:var(--pink)} .bg-coral{background:var(--coral)}
+.bg-yellow{background:var(--yellow)} .bg-sand{background:var(--sand)} .bg-concrete{background:var(--concrete)} .bg-ink{background:var(--ink);color:#fff}
+
+/* type */
+.kick{display:inline-flex;align-items:center;gap:8px;font:600 13px/1 var(--f-body);letter-spacing:.02em;padding:9px 14px;border-radius:99px;background:#fff;color:var(--ink);margin-bottom:22px}
+.kick b{font:800 12px/1 var(--f-body);background:var(--ink);color:#fff;border-radius:99px;padding:4px 8px}
+.ttl{font:600 clamp(36px,10.5vw,64px)/.98 var(--f-body);letter-spacing:-.035em;margin:0 0 18px;text-transform:lowercase}
+.ttl .talk{font:900 italic 1.04em/1 var(--f-fun);letter-spacing:-.01em}
+.talk{font-family:var(--f-fun);font-style:italic;font-weight:900}
+.round{font-family:var(--f-round);font-weight:500}
+.lead{font-size:19px;line-height:1.45;max-width:30em;margin:0 0 14px}
+.lead+.lead{margin-top:-4px}
+.small{font-size:14px;opacity:.75}
+.c-purple{color:var(--purple)} .c-coral{color:var(--coral)} .c-green{color:var(--green)} .c-pink{color:var(--pink)} .c-yellow{color:var(--yellow)} .c-lime{color:var(--lime)} .c-deep{color:var(--deep)}
+.wd{display:inline-block}
+.dotted{background-image:radial-gradient(circle,currentColor 1.6px,transparent 2px);background-size:9px 4px;background-repeat:repeat-x;background-position:0 100%;padding-bottom:7px}
+
+/* hand-drawn ellipse around a word */
+.circ{position:relative;display:inline-block;z-index:0}
+.circ>svg{position:absolute;left:-14%;top:-24%;width:128%;height:150%;overflow:visible;z-index:-1;pointer-events:none}
+.circ>svg path{fill:none;stroke:var(--purple);stroke-width:3.2;stroke-linecap:round;vector-effect:non-scaling-stroke}
+
+/* decor */
+.deco{position:absolute;pointer-events:none}
+.burst{width:120px;height:120px}
+.burst circle{fill:none;stroke-width:34;stroke-dasharray:1.3 5.2}
+.scrib{fill:none;stroke:var(--ink);stroke-width:7;stroke-linecap:round;stroke-linejoin:round}
+.snake path{fill:none;stroke-linecap:round;stroke-linejoin:round}
+
+/* speech-bubble sticker */
+.bub{position:relative;display:inline-block;padding:14px 20px 16px;border-radius:30px;font:600 22px/1.02 var(--f-round);letter-spacing:-.02em;color:#fff;background:var(--purple)}
+.bub::after{content:"";position:absolute;bottom:-12px;left:22px;width:26px;height:26px;background:inherit;border-radius:0 0 0 22px;clip-path:polygon(0 0,100% 0,0 100%)}
+.bub.r::after{left:auto;right:22px;transform:scaleX(-1)}
+.bub.pink{background:var(--pink)} .bub.coral{background:var(--coral)} .bub.green{background:var(--green)} .bub.lime{background:var(--lime);color:var(--green)} .bub.yellow{background:var(--yellow);color:var(--green)} .bub.white{background:#fff;color:var(--ink)}
+
+/* wordmark */
+.wm{display:inline-flex;align-items:baseline;gap:.06em;line-height:.9;white-space:nowrap}
+.wm .a{font:500 1em/1 var(--f-round);letter-spacing:-.04em}
+.wm .b{font:900 italic 1.06em/1 var(--f-fun);letter-spacing:-.02em}
+.logo-bub{display:inline-flex;flex-direction:column;align-items:flex-start;padding:16px 18px 18px;border-radius:34px 34px 34px 6px;background:var(--green);color:var(--lime);line-height:.86}
+.logo-bub .a{font:500 25px/1 var(--f-round);letter-spacing:-.04em}
+.logo-bub .b{font:900 italic 30px/1 var(--f-fun)}
+
+/* pills / buttons */
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:6px;border:2px solid var(--ink);border-radius:99px;padding:8px 14px;font:600 14px/1 var(--f-body);background:transparent}
+.pill.fill{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:2px solid var(--pink);background:var(--pink);color:#fff;border-radius:99px;padding:14px 22px;font:700 16px/1 var(--f-body);transition:scale .15s}
+.btn:active{scale:.96}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ink{background:var(--ink);border-color:var(--ink)}
+.btn svg{width:18px;height:18px}
+
+/* speak button */
+.say{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:0;background:var(--ink);color:#fff;flex:none;vertical-align:middle;transition:scale .15s}
+.say:active{scale:.9}
+.say svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.say.on{background:var(--pink)}
+
+/* ===== HERO ===== */
+.hero{padding:0;background:var(--lime);min-height:100svh;display:flex;flex-direction:column}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;padding:18px 20px 0;position:relative;z-index:3}
+.hero-giant{position:relative;flex:1;padding:0 14px;color:#fff;font:500 clamp(92px,31vw,260px)/.74 var(--f-round);letter-spacing:-.06em;z-index:1;margin-top:8px}
+.hero-giant .ln{display:block;white-space:nowrap}
+.hero-giant .ln span{display:inline-block}
+.hero .snake{position:absolute;right:-6%;bottom:-2%;width:82%;max-width:520px;z-index:2}
+.hero .logo-bub{animation:pop .9s cubic-bezier(.3,1.6,.5,1) .5s both}
+.hero-giant .ln{animation:drop .9s cubic-bezier(.2,1.4,.4,1) both}
+.hero-giant .ln:nth-child(2){animation-delay:.08s}.hero-giant .ln:nth-child(3){animation-delay:.16s}.hero-giant .ln:nth-child(4){animation-delay:.24s}
+@keyframes drop{from{transform:translateY(-40%) rotate(-4deg)}to{transform:none}}
+@keyframes pop{from{transform:scale(.4) rotate(-14deg)}to{transform:none}}
+.hero-meta{position:relative;z-index:3;padding:0 20px 22px;display:flex;gap:8px;flex-wrap:wrap}
+.hero-meta .pill{background:#fff;border-color:#fff}
+.hero-meta .pill.fill{background:var(--green);border-color:var(--green)}
+
+.intro{background:var(--concrete);padding-top:70px;padding-bottom:140px}
+.intro .ttl{font-size:clamp(40px,12.4vw,78px);line-height:1}
+.intro .grid-patch{position:absolute;right:10px;top:22px;width:110px;height:80px;background-image:linear-gradient(var(--yellow) 1px,transparent 1px),linear-gradient(90deg,var(--yellow) 1px,transparent 1px);background-size:9px 9px;opacity:.9}
+
+/* ===== STORY CARDS ===== */
+.stories{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 20px 26px;margin:0 -20px;scrollbar-width:none}
+.stories::-webkit-scrollbar{display:none}
+.story{flex:0 0 min(80vw,330px);aspect-ratio:9/16;border-radius:28px;padding:16px;position:relative;overflow:hidden;scroll-snap-align:center;display:flex;flex-direction:column}
+.story-h{display:flex;align-items:center;gap:8px;font:600 12px/1 var(--f-body);position:relative;z-index:2}
+.story-h i{width:30px;height:30px;border-radius:50%;background:#fff;display:grid;place-items:center;font:900 italic 9px/0.8 var(--f-fun);color:var(--pink);text-align:center;border:2px solid rgba(0,0,0,.08)}
+.story-h em{font-style:normal;opacity:.6;font-weight:400}
+.story-bar{position:absolute;left:14px;right:14px;top:10px;display:flex;gap:4px;z-index:2}
+.story-bar span{flex:1;height:3px;border-radius:3px;background:rgba(255,255,255,.45);overflow:hidden}
+.story-bar span b{display:block;height:100%;width:100%;background:#fff;transform-origin:left}
+.story-txt{position:relative;z-index:2;margin-top:auto;margin-bottom:62px;font:600 21px/1.18 var(--f-body);letter-spacing:-.02em}
+.story-txt p{margin:0 0 6px}
+.story-foot{position:absolute;left:14px;right:14px;bottom:14px;display:flex;align-items:center;gap:8px;z-index:2}
+.story-foot .cam{width:36px;height:36px;border-radius:50%;border:2px solid currentColor;display:grid;place-items:center;opacity:.8}
+.story-foot .cam svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+.story-foot .inp{flex:1;height:36px;border-radius:99px;border:2px solid currentColor;opacity:.55}
+.story .bub{position:relative;z-index:2;align-self:flex-start;margin-top:26px;font-size:19px}
+.story svg.chr{position:absolute;z-index:1}
+
+/* ===== MARQUEE ===== */
+.marq{padding:0;overflow:hidden;background:transparent}
+.band{background:var(--purple);color:#fff;transform:rotate(-3deg);margin:30px -20px;padding:14px 0;white-space:nowrap;overflow:hidden}
+.band.lime{background:var(--lime);color:var(--green);transform:rotate(2deg);margin-top:-22px}
+.track{display:inline-flex;gap:28px;font:900 italic 30px/1 var(--f-fun);animation:mq 30s linear infinite}
+.track span{display:inline-flex;align-items:center;gap:28px}
+.track svg{width:30px;height:30px}
+html.gs .track{animation:none}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* ===== ROUTE MAP ===== */
+.route{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+.route a{display:flex;flex-direction:column;justify-content:space-between;min-height:118px;padding:14px;border-radius:24px;text-decoration:none;font:600 15px/1.15 var(--f-body);transition:scale .2s}
+.route a:active{scale:.97}
+.route a b{font:900 italic 34px/1 var(--f-fun)}
+.route a:nth-child(1){background:var(--purple);color:#fff}
+.route a:nth-child(2){background:var(--lime);color:var(--green)}
+.route a:nth-child(3){background:var(--coral);color:#fff}
+.route a:nth-child(4){background:var(--yellow);color:var(--green)}
+.route a:nth-child(5){background:var(--pink);color:var(--deep)}
+.route a:nth-child(6){background:var(--green);color:var(--lime)}
+.route a:nth-child(7){background:var(--sand);color:var(--coral)}
+.route a:nth-child(8){background:var(--deep);color:var(--pink)}
+.route a:nth-child(9){background:#fff;color:var(--purple)}
+.route a:nth-child(10){background:var(--ink);color:var(--lime)}
+
+/* ===== SCENE / STEPPER ===== */
+.scene{background:#fff;border-radius:34px;padding:22px 18px 18px;position:relative;margin-top:26px;color:var(--ink)}
+.scene.dark{background:var(--deep);color:#fff}
+.stage{position:relative;min-height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px;padding:10px 0 4px}
+.cap{min-height:3.1em;margin:14px 0 12px;font:600 17px/1.35 var(--f-body);text-align:center}
+.ctrl{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.dots{display:flex;gap:4px;flex-wrap:nowrap;justify-content:center;flex:1;min-width:0}
+.dots button{width:8px;height:8px;flex:none;border-radius:50%;border:0;padding:0;background:rgba(0,0,0,.15);transition:background .2s,scale .2s}
+.scene.dark .dots button{background:rgba(255,255,255,.25)}
+.dots button.on{background:var(--pink);scale:1.35}
+.cbtn{width:44px;height:44px;border-radius:50%;border:2px solid currentColor;background:transparent;display:grid;place-items:center;flex:none}
+.cbtn.main{background:var(--pink);border-color:var(--pink);color:#fff}
+.cbtn svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+
+/* chips = suffix blocks */
+.row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px}
+.chip{display:inline-flex;align-items:center;justify-content:center;min-width:34px;padding:10px 12px;border-radius:16px;font:700 21px/1 var(--f-body);letter-spacing:-.01em;color:#fff;background:var(--ink);white-space:nowrap}
+.chip.sm{font-size:16px;padding:8px 7px;border-radius:12px;min-width:24px}
+#fB .gl{font-size:10px}
+.chip.green{background:var(--green)} .chip.coral{background:var(--coral)} .chip.purple{background:var(--purple)} .chip.pink{background:var(--pink);color:var(--deep)}
+.chip.yellow{background:var(--yellow);color:var(--ink)} .chip.lime{background:var(--lime);color:var(--green)} .chip.sand{background:var(--sand);color:var(--coral)} .chip.deep{background:var(--deep)} .chip.white{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink)}
+.chip.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 2px var(--ink);border-style:dashed}
+.flipbox{perspective:400px;display:inline-block}
+#fB5 .kk{position:absolute;inset:0;display:grid;place-items:center;opacity:0;visibility:hidden}
+html:not(.gs) #qGhost{display:none}
+.flipbox .chip{transform-style:preserve-3d}
+.legend{display:flex;flex-wrap:wrap;gap:6px 12px;justify-content:center;font-size:13px;margin-top:4px}
+.legend i{display:inline-block;width:11px;height:11px;border-radius:4px;margin-right:5px;vertical-align:-1px}
+.gl{font-size:12px;font-weight:600;opacity:.7;text-align:center;margin-top:3px}
+.pair{display:flex;flex-direction:column;align-items:center}
+
+/* direct-question bubble inside scenes */
+.qbub{font:600 30px/1 var(--f-round);letter-spacing:-.03em;padding:18px 24px 20px}
+.qbub .w{display:inline-block}
+
+/* ===== YES/NO ===== */
+.yn{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.yn-card{border-radius:30px;padding:16px 14px 0;position:relative;overflow:hidden;min-height:250px;display:flex;flex-direction:column;align-items:flex-start;transition:filter .3s}
+.yn-card.off{filter:grayscale(1) opacity(.35)}
+.yn-card .bub{font-size:19px}
+.yn-card svg{position:absolute;bottom:-6px;right:-10px;width:120%}
+.yn-out{margin-top:16px;background:#fff;border-radius:26px;padding:18px;text-align:center}
+.yn-out .tr{font-size:24px;display:block;margin-bottom:6px}
+
+/* ===== TIMELINE ===== */
+.tline{position:relative;margin:26px 4px 6px;height:70px}
+.tline svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.tline-stops{display:flex;justify-content:space-between;margin-top:6px}
+.tline-stops button{border:0;background:transparent;font:700 14px/1.1 var(--f-body);padding:6px 4px;opacity:.55;text-align:center}
+.tline-stops button.on{opacity:1;color:var(--pink)}
+.tl-sent{text-align:center;margin-top:14px}
+.tl-sent .big{font:700 clamp(25px,7vw,34px)/1.15 var(--f-body);letter-spacing:-.02em}
+.tl-sent .suf{display:inline-block;background:var(--pink);color:var(--deep);border-radius:12px;padding:0 6px}
+.tl-sent p{margin:10px 0 0}
+
+/* ===== PALETTE (persons) ===== */
+.pal{display:grid;grid-template-columns:1fr 1fr;margin-top:26px;border-radius:30px;overflow:hidden}
+.sw{min-height:178px;padding:16px 14px;display:flex;flex-direction:column;border:0;text-align:left;position:relative;transition:filter .2s}
+.sw small{font:600 11px/1 var(--f-body);opacity:.75;letter-spacing:.03em}
+.sw strong{font:600 26px/1 var(--f-round);letter-spacing:-.03em;margin:6px 0 auto}
+.sw .w{font:700 16px/1.2 var(--f-body);margin-top:12px;word-break:break-word}
+.sw .w u{text-decoration:none;border-bottom:2px solid currentColor}
+.sw .code{font:600 10.5px/1.4 var(--f-body);opacity:.8;margin-top:8px}
+.sw:nth-child(1){background:var(--purple);color:#fff}.sw:nth-child(2){background:var(--yellow);color:var(--ink)}
+.sw:nth-child(3){background:var(--pink);color:var(--deep)}.sw:nth-child(4){background:var(--coral);color:#fff}
+.sw:nth-child(5){background:var(--deep);color:#fff}.sw:nth-child(6){background:var(--sand);color:var(--ink)}
+.sw .say{position:absolute;right:12px;top:12px;width:30px;height:30px;background:rgba(0,0,0,.18)}
+
+/* ===== CASE TABS ===== */
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:22px 0 16px}
+.tabs button{border:2px solid var(--ink);background:transparent;border-radius:99px;padding:10px 14px;font:700 15px/1 var(--f-body)}
+.tabs button.on{background:var(--ink);color:#fff}
+.case-out{background:#fff;border-radius:30px;padding:22px 16px;text-align:center}
+.case-out .big{font:700 clamp(23px,6.6vw,32px)/1.2 var(--f-body);letter-spacing:-.02em}
+.case-out .end{display:inline-block;background:var(--coral);color:#fff;border-radius:12px;padding:0 7px}
+.case-out p{margin:10px 0 0}
+.door{display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:14px;font:600 15px/1.2 var(--f-body)}
+.door .chip{font-size:18px}
+
+/* ===== FLIP CARDS (olup olmadığını) ===== */
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:24px}
+.fc{perspective:900px;height:200px;border:0;padding:0;background:transparent;text-align:left}
+.fc-in{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .6s cubic-bezier(.3,1.4,.5,1)}
+.fc.on .fc-in{transform:rotateY(180deg)}
+.fc-f,.fc-b{position:absolute;inset:0;border-radius:26px;padding:16px;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column}
+.fc-b{transform:rotateY(180deg)}
+.fc-f strong{font:600 30px/1 var(--f-round);letter-spacing:-.03em;margin-top:auto}
+.fc-f small,.fc-b small{font:600 12px/1.2 var(--f-body);opacity:.8}
+.fc-b strong{font:700 18px/1.15 var(--f-body);margin-top:auto}
+.fc-b em{font-style:normal;font-size:13px;margin-top:6px;opacity:.85}
+
+/* ===== CHAT ===== */
+.chat{background:#fff;border-radius:34px;padding:18px 14px;margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.chat-h{display:flex;align-items:center;gap:10px;font:700 15px/1 var(--f-body);padding-bottom:10px;border-bottom:1px solid #eee}
+.chat-h i{width:34px;height:34px;border-radius:50%;background:var(--coral);display:grid;place-items:center;color:#fff;font:900 italic 16px/1 var(--f-fun)}
+.chat-h em{font-style:normal;font-weight:400;font-size:12px;opacity:.6;display:block;margin-top:3px}
+.msg{max-width:82%;padding:11px 15px;border-radius:22px;font:500 16px/1.3 var(--f-body)}
+.msg.in{background:var(--concrete);border-bottom-left-radius:6px;align-self:flex-start}
+.msg.out{background:var(--purple);color:#fff;border-bottom-right-radius:6px;align-self:flex-end}
+.msg .tr{display:block}
+.msg small{display:block;font-size:12px;opacity:.7;margin-top:3px}
+.typing{align-self:flex-start;background:var(--concrete);border-radius:22px;padding:13px 16px;display:flex;gap:5px}
+.typing i{width:7px;height:7px;border-radius:50%;background:#999;animation:tp 1s infinite}
+.typing i:nth-child(2){animation-delay:.15s}.typing i:nth-child(3){animation-delay:.3s}
+@keyframes tp{50%{transform:translateY(-4px);opacity:.4}}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.vs div{border-radius:24px;padding:16px;font:600 15px/1.3 var(--f-body)}
+.vs b{display:block;font:900 italic 22px/1 var(--f-fun);margin-bottom:8px}
+
+/* ===== HARMONY TABLE ===== */
+.hm{margin-top:24px;background:#fff;border-radius:30px;overflow:hidden}
+.hm-row{display:grid;grid-template-columns:minmax(52px,auto) 1fr 34px;align-items:center;gap:10px;padding:14px 14px;border-bottom:1px solid #eee}
+.hm-row:last-child{border:0}
+.hm-row .root{font:900 italic 22px/1 var(--f-fun);color:var(--purple)}
+.hm-row .form{font:600 17px/1.25 var(--f-body)}
+.hm-row .form mark{background:var(--lime);color:var(--green);border-radius:7px;padding:0 3px}
+.hm-row .form mark.s{background:var(--coral);color:#fff}
+.hm-row .form small{display:block;font-weight:400;font-size:13px;opacity:.65}
+
+/* ===== BUILDER (login form style) ===== */
+.builder{display:grid;gap:22px;margin-top:20px}
+.b-visual{border-radius:34px;background:var(--pink);min-height:210px;position:relative;overflow:hidden;display:grid;place-items:center;padding:24px 16px}
+.b-visual .bigtalk{font:900 italic clamp(70px,24vw,130px)/.8 var(--f-fun);color:var(--sand);position:absolute;inset:auto -4% -8% auto;transform:rotate(-8deg);opacity:.9}
+.b-out{position:relative;z-index:2;text-align:center}
+.b-out .tr{font:700 clamp(22px,6.4vw,30px)/1.2 var(--f-body);color:var(--deep);letter-spacing:-.02em}
+.b-out .tr span{display:inline-block}
+.b-out p{margin:10px 0 0;font:600 16px/1.3 var(--f-body);color:var(--deep)}
+.b-form{display:grid;gap:12px}
+.b-form label{font:600 12px/1 var(--f-body);opacity:.65;margin:0 0 -4px 18px}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{border:2px solid var(--ink);background:transparent;border-radius:99px;padding:11px 15px;font:600 15px/1 var(--f-body)}
+.seg button.on{background:var(--ink);color:#fff}
+.b-actions{display:flex;gap:10px;flex-wrap:wrap}
+
+/* ===== QUIZ ===== */
+.quiz{background:#fff;color:var(--ink);border-radius:34px;padding:22px 18px;margin-top:22px;position:relative}
+.q-top{display:flex;justify-content:space-between;align-items:center;font:700 14px/1 var(--f-body);margin-bottom:14px}
+.q-prog{height:6px;border-radius:6px;background:var(--concrete);overflow:hidden;margin-bottom:18px}
+.q-prog b{display:block;height:100%;background:var(--purple);width:0;transition:width .4s}
+.q-text{font:600 21px/1.25 var(--f-body);letter-spacing:-.01em;margin:0 0 16px}
+.q-opts{display:grid;gap:8px}
+.q-opts button{border:2px solid var(--ink);background:transparent;border-radius:22px;padding:14px 16px;text-align:left;font:600 16px/1.25 var(--f-body);transition:background .2s,color .2s,scale .15s}
+.q-opts button:active{scale:.98}
+.q-opts button.ok{background:var(--green);border-color:var(--green);color:#fff}
+.q-opts button.bad{background:var(--coral);border-color:var(--coral);color:#fff}
+.q-opts button[disabled]{cursor:default}
+.q-exp{margin-top:14px;border-radius:22px;background:var(--sand);padding:14px 16px;font:500 15px/1.4 var(--f-body);display:none}
+.q-exp.on{display:block}
+.q-next{margin-top:14px;display:none}
+.q-next.on{display:inline-flex}
+.q-final{text-align:center;display:none}
+.q-final.on{display:block}
+.q-final .score{font:900 italic 90px/1 var(--f-fun);color:var(--purple)}
+.confetti{position:fixed;left:0;top:0;width:12px;height:16px;border-radius:4px;z-index:50;pointer-events:none}
+
+/* ===== CHEAT TILES ===== */
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:24px}
+.tile{aspect-ratio:1;border-radius:30px;padding:16px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.tile.wide{grid-column:span 2;aspect-ratio:auto;min-height:150px}
+.tile small{font:700 12px/1.1 var(--f-body);opacity:.8}
+.tile strong{font:600 clamp(17px,5.2vw,23px)/1.05 var(--f-round);overflow-wrap:anywhere;letter-spacing:-.03em;margin-top:auto;position:relative;z-index:2}
+.tile p{margin:6px 0 0;font:500 13.5px/1.3 var(--f-body);position:relative;z-index:2}
+.tile svg.dec{position:absolute;right:-14px;top:-14px;width:96px;height:96px;opacity:.9}
+
+/* ===== OUTRO ===== */
+.outro{background:var(--purple);color:#fff;text-align:center;padding:110px 20px 120px}
+.outro .wm{font-size:clamp(56px,17vw,120px);color:#fff}
+.outro .wm .b{color:var(--pink)}
+.outro .story-end{max-width:24em;margin:34px auto 0;font:600 20px/1.35 var(--f-body)}
+.outro .story-end p{margin:0 0 4px}
+.outro .last{margin-top:26px;font:900 italic 26px/1.1 var(--f-fun);color:var(--lime)}
+.colorstrip{display:grid;grid-template-columns:repeat(4,1fr);height:56px}
+.colorstrip i:nth-child(1){background:var(--purple)}.colorstrip i:nth-child(2){background:var(--yellow)}.colorstrip i:nth-child(3){background:var(--lime)}.colorstrip i:nth-child(4){background:var(--green)}
+footer{background:var(--ink);color:#fff;text-align:center;padding:26px 20px;font:500 13px/1.4 var(--f-body)}
+
+/* reveal fallback */
+.rv{transition:transform .8s cubic-bezier(.2,1.2,.4,1)}
+html.js:not(.gs) .rv:not(.in){transform:translateY(30px)}
+html.gs .rv{transition:none}
+
+@media (min-width:760px){
+  section{padding:110px 32px}
+  .route{grid-template-columns:repeat(5,1fr)}
+  .tiles{grid-template-columns:repeat(3,1fr)}
+  .pal{grid-template-columns:repeat(3,1fr)}
+  .cards{grid-template-columns:repeat(4,1fr)}
+  .hero-giant{padding:0 40px}
+  .stories{justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-vol" viewBox="0 0 24 24"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.4 18.4a9 9 0 0 0 0-12.8"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M19 12H5"/><path d="m11 6-6 6 6 6"/></symbol>
+    <symbol id="i-redo" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></symbol>
+    <symbol id="i-cam" viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></symbol>
+    <symbol id="burst" viewBox="0 0 120 120"><circle cx="60" cy="60" r="38" fill="none" stroke-width="34" stroke-dasharray="1.3 5.2"/></symbol>
+    <symbol id="spark" viewBox="0 0 100 100"><path d="M50 4C54 40 60 46 96 50 60 54 54 60 50 96 46 60 40 54 4 50 40 46 46 40 50 4Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/></symbol>
+    <symbol id="ccc" viewBox="0 0 92 56"><path class="scrib" d="M8 48C6 14 34 10 30 42M30 42C28 8 58 6 54 38M54 38C52 4 84 4 80 34" stroke="currentColor"/></symbol>
+    <symbol id="loop" viewBox="0 0 140 120"><path class="scrib" d="M8 110C30 40 96 8 104 40 112 72 56 84 52 56 48 28 98 12 132 30" stroke="currentColor" stroke-width="4"/></symbol>
+    <symbol id="zz" viewBox="0 0 80 70"><path class="scrib" d="M10 18C26 2 40 22 22 32 42 28 50 52 24 60M46 12C64 22 66 44 48 60M62 30h14" stroke="currentColor" stroke-width="6"/></symbol>
+    <symbol id="arrow" viewBox="0 0 80 60"><path d="M8 48C24 40 40 30 66 14M66 14 46 12M66 14 62 34" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="tick" viewBox="0 0 60 50"><path d="M10 40 18 8M28 42 34 6M46 40 52 10" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="top">
+  <div class="hero-top">
+    <span class="pill fill" style="background:#fff;color:var(--green);border-color:#fff">B2 · 09</span>
+    <div class="logo-bub" id="heroLogo"><span class="a">dolaylı</span><span class="b">soru</span></div>
+  </div>
+  <div class="hero-giant" aria-hidden="true">
+    <span class="ln"><span>s</span><span>o</span><span>r</span></span>
+    <span class="ln"><span>o</span><span>o</span><span>o</span><span>o</span></span>
+    <span class="ln"><span>o</span><span>o</span><span>o</span><span>o</span></span>
+    <span class="ln"><span>d</span><span>u</span><span>?</span></span>
+  </div>
+  <svg class="snake" id="heroSnake" viewBox="0 0 420 520" aria-hidden="true">
+    <path d="M330 540C330 440 120 470 110 380S300 300 290 210 140 150 170 70" stroke="var(--green)" stroke-width="86"/>
+    <path d="M150 60c-8-30 6-44 22-40s18 22 10 34" stroke="var(--green)" stroke-width="40"/>
+    <use href="#ccc" x="96" y="-4" width="110" height="66" style="color:var(--ink)"/>
+  </svg>
+  <div class="hero-meta">
+    <span class="pill fill">турецкий</span>
+    <span class="pill">косвенный вопрос</span>
+    <span class="pill">~12 минут</span>
+  </div>
+</header>
+
+<section class="intro">
+  <div class="grid-patch" aria-hidden="true"></div>
+  <svg class="deco burst" style="left:-30px;top:110px;color:var(--lime)" aria-hidden="true"><use href="#burst" stroke="var(--lime)"/></svg>
+  <div class="wrap">
+    <span class="kick"><b>тема</b> спросить, не спрашивая</span>
+    <h1 class="ttl split">
+      <span class="circ">gelip<svg viewBox="0 0 100 50" preserveAspectRatio="none"><path pathLength="1" d="M8 30C4 10 60 2 88 12 104 18 96 40 60 46 24 50 2 38 12 22 18 14 40 6 62 6"/></svg></span><br>
+      <span class="c-purple">gelmeyeceğini</span><br>
+      <span class="dotted">sordu</span>
+    </h1>
+    <p class="lead">Он спросил, придёшь ли ты.</p>
+    <p class="lead small" style="opacity:.8">В русском вопрос держится на «ли». В турецком «ли» нет. Есть пара. Да и нет. Рядом.</p>
+    <div style="display:flex;gap:10px;align-items:center;margin-top:18px">
+      <button class="say" data-tr="Gelip gelmeyeceğini sordu." aria-label="Послушать"><svg><use href="#i-vol"/></svg></button>
+      <span class="small">послушать фразу</span>
+    </div>
+  </div>
+  <div class="deco bub pink" style="right:18px;bottom:34px;font-size:17px;transform:rotate(6deg)" data-float>gelecek<br>miii?</div>
+  <svg class="deco" style="right:130px;bottom:40px;width:60px;color:var(--pink);transform:scaleX(-1) rotate(-20deg)" aria-hidden="true"><use href="#arrow"/></svg>
+  <svg class="deco" style="left:52%;top:40px;width:70px;color:var(--ink)" aria-hidden="true"><use href="#zz"/></svg>
+</section>
+
+<!-- ============ STORIES ============ -->
+<section class="bg-concrete" style="padding-top:20px" id="story">
+  <div class="wrap">
+    <span class="kick"><b>01</b> история</span>
+    <h2 class="ttl split">суббота. <span class="talk c-coral">список.</span></h2>
+    <p class="small" style="margin-top:-6px">листай вбок →</p>
+    <div class="stories">
+      <article class="story bg-coral" style="color:#fff">
+        <div class="story-bar"><span><b></b></span><span><b style="transform:scaleX(0)"></b></span><span><b style="transform:scaleX(0)"></b></span></div>
+        <div class="story-h" style="margin-top:10px"><i>dl<br>sr</i>Ankara <em>3ч</em></div>
+        <div class="bub yellow">hadi<br>bakalım!</div>
+        <svg class="chr" viewBox="0 0 220 220" style="right:-30px;top:120px;width:200px" aria-hidden="true">
+          <path d="M110 12 130 74 196 60 152 108 206 150 138 148 128 210 104 156 52 196 74 136 12 116 76 98 50 40 102 76Z" fill="var(--yellow)"/>
+          <path d="M74 120c6-14 22-14 28 0" fill="#fff" stroke="var(--ink)" stroke-width="5"/><path d="M118 116c6-14 22-14 28 0" fill="#fff" stroke="var(--ink)" stroke-width="5"/>
+          <path d="M80 118a8 8 0 0 0 16 0M124 114a8 8 0 0 0 16 0" fill="var(--ink)"/>
+          <path d="M98 146c10 10 24 8 30-4" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+          <path d="M70 102l-6-12M84 98l-2-14M126 96l2-14M140 98l6-12" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+        </svg>
+        <div class="story-txt"><p>Суббота. У Мерта день рождения.</p><p>День рождения в кафе. Кафе просит список.</p><p>Список ведёт Айше.</p></div>
+        <div class="story-foot"><span class="cam"><svg><use href="#i-cam"/></svg></span><span class="inp"></span></div>
+      </article>
+      <article class="story bg-lime" style="color:var(--green)">
+        <div class="story-bar"><span><b></b></span><span><b></b></span><span><b style="transform:scaleX(0)"></b></span></div>
+        <div class="story-h" style="margin-top:10px;color:var(--ink)"><i>dl<br>sr</i>Ankara <em>2ч</em></div>
+        <div class="bub green" style="color:var(--lime)">Geliyor<br>musun?</div>
+        <svg class="chr" viewBox="0 0 200 240" style="right:-16px;top:110px;width:150px" aria-hidden="true">
+          <rect x="40" y="20" width="120" height="230" rx="18" fill="var(--green)"/>
+          <ellipse cx="112" cy="104" rx="20" ry="30" fill="#fff"/><ellipse cx="114" cy="114" rx="13" ry="18" fill="var(--ink)"/>
+          <path d="M80 70h46M70 34l2-26M90 34l2-26M110 34l2-26" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+          <path d="M94 160c14 6 28 6 40 0" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <div class="story-txt" style="color:var(--ink)"><p>Айше пишет тебе. Пишет два слова.</p><p>Ты отвечаешь одним. Evet.</p><p>Evet понятно всем.</p></div>
+        <div class="story-foot" style="color:var(--ink)"><span class="cam"><svg><use href="#i-cam"/></svg></span><span class="inp"></span></div>
+      </article>
+      <article class="story bg-purple">
+        <div class="story-bar"><span><b></b></span><span><b></b></span><span><b></b></span></div>
+        <div class="story-h" style="margin-top:10px"><i>dl<br>sr</i>Ankara <em>1ч</em></div>
+        <div class="bub pink" style="color:var(--deep)">Ayşe ne<br>istedi?</div>
+        <svg class="chr" viewBox="0 0 240 200" style="right:-40px;top:130px;width:210px" aria-hidden="true">
+          <g fill="var(--pink)"><circle cx="70" cy="110" r="44"/><circle cx="120" cy="80" r="50"/><circle cx="170" cy="110" r="44"/><circle cx="120" cy="140" r="50"/></g>
+          <path d="M84 104c8-18 30-18 38 0M134 104c8-18 30-18 38 0" fill="none" stroke="var(--ink)" stroke-width="8" stroke-linecap="round"/>
+          <path d="M90 96a12 10 0 0 0 26 4M140 96a12 10 0 0 0 26 4" fill="#fff"/>
+          <path d="M80 44c6-16 18-16 16 0s10-16 18-2 12-14 18 0 12-12 16 2" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <div class="story-txt"><p>Мерт спрашивает. Что Айше хотела?</p><p>Ты открываешь рот. Рот выдаёт: Ayşe… sordu… gelecek mi… ben…</p><p>Мерт добрый. Мерт кивает.</p></div>
+        <div class="story-foot"><span class="cam"><svg><use href="#i-cam"/></svg></span><span class="inp"></span></div>
+      </article>
+    </div>
+    <p class="lead">А сказать надо было простое. Она спросила, приду ли я.</p>
+    <p class="lead">Простое по-турецки выглядит так.</p>
+    <div class="row" style="justify-content:flex-start;margin-top:14px">
+      <span class="chip green">Gelip</span><span class="chip coral">gelmeyeceğimi</span><span class="chip purple">sordu</span>
+      <button class="say" data-tr="Gelip gelmeyeceğimi sordu." aria-label="Послушать"><svg><use href="#i-vol"/></svg></button>
+    </div>
+    <p class="lead" style="margin-top:18px">Две формы одного глагола. Одна «да». Вторая «нет». Ниже разберём по деталям.</p>
+  </div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marq" aria-hidden="true">
+  <div class="band"><div class="track" id="mq1"><span>gelip gelmeyeceğini <svg><use href="#spark"/></svg> yapıp yapmadığını <svg><use href="#spark"/></svg> olup olmadığını <svg><use href="#spark"/></svg></span><span>gelip gelmeyeceğini <svg><use href="#spark"/></svg> yapıp yapmadığını <svg><use href="#spark"/></svg> olup olmadığını <svg><use href="#spark"/></svg></span></div></div>
+  <div class="band lime"><div class="track" id="mq2"><span>да + нет = ли <svg><use href="#spark"/></svg> sordu <svg><use href="#spark"/></svg> bilmiyorum <svg><use href="#spark"/></svg> merak ediyorum <svg><use href="#spark"/></svg></span><span>да + нет = ли <svg><use href="#spark"/></svg> sordu <svg><use href="#spark"/></svg> bilmiyorum <svg><use href="#spark"/></svg> merak ediyorum <svg><use href="#spark"/></svg></span></div></div>
+</div>
+
+<!-- ============ ROUTE ============ -->
+<section class="bg-concrete" style="padding-top:50px">
+  <div class="wrap">
+    <span class="kick"><b>02</b> маршрут</span>
+    <h2 class="ttl split">десять <span class="talk c-purple">остановок</span></h2>
+    <nav class="route stg">
+      <a href="#hide"><b>1</b>вопрос прячется</a>
+      <a href="#factory"><b>2</b>сборка по деталям</a>
+      <a href="#yesno"><b>3</b>зачем пара</a>
+      <a href="#time"><b>4</b>вчера или завтра</a>
+      <a href="#persons"><b>5</b>чей вопрос</a>
+      <a href="#cases"><b>6</b>глагол-хозяин</a>
+      <a href="#qword"><b>7</b>ne, kim, nerede</a>
+      <a href="#olup"><b>8</b>olup olmadığını</a>
+      <a href="#builder"><b>9</b>конструктор</a>
+      <a href="#quiz"><b>10</b>тест</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ============ 1. HIDE ============ -->
+<section class="bg-lime" id="hide">
+  <svg class="deco burst" style="right:-34px;top:40px" aria-hidden="true"><use href="#burst" stroke="#fff"/></svg>
+  <div class="wrap">
+    <span class="kick"><b>1</b> главная идея</span>
+    <h2 class="ttl split">вопрос <span class="talk" style="color:var(--green)">прячется</span> внутрь</h2>
+    <p class="lead">Прямой вопрос кричит. У него знак. У него частица mi.</p>
+    <p class="lead">Пересказ не кричит. Знак уходит. Частица уходит. Глагол встаёт парой.</p>
+    <div class="scene" data-scene="hide">
+      <div class="stage">
+        <div class="bub pink qbub" id="hQ" style="color:var(--deep)"><span class="w" id="hGel">Gelecek</span> <span class="w" id="hMi">misin</span><span class="w" id="hQm">?</span></div>
+        <div class="row" id="hOut">
+          <span class="chip green" id="hP1">gelip</span>
+          <span class="chip coral" id="hP2">gelmeyeceğini</span>
+          <span class="chip purple" id="hP3">sordu</span>
+        </div>
+        <div id="hRu" style="font:600 16px/1.3 var(--f-body);text-align:center">Он спросил, придёшь ли ты.</div>
+      </div>
+      <p class="cap" data-caps='["Вот вопрос. Прямой. Gelecek misin? Придёшь?","Знак улетает. Пересказ не кричит.","Частица mi уходит следом. Ей тут нечего делать.","Глагол встаёт парой. Первым идёт «да». gelip.","Вторым идёт «нет». gelmeyeceğini.","Сверху тот, кто спросил. sordu. Готово."]'></p>
+      <div class="ctrl">
+        <button class="cbtn" data-prev aria-label="Назад"><svg><use href="#i-prev"/></svg></button>
+        <div class="dots"></div>
+        <button class="cbtn" data-redo aria-label="Заново"><svg><use href="#i-redo"/></svg></button>
+        <button class="cbtn main" data-next aria-label="Дальше"><svg><use href="#i-next"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. FACTORY ============ -->
+<section class="bg-concrete" id="factory">
+  <svg class="deco" style="left:-10px;top:30px;width:120px;color:var(--purple)" aria-hidden="true"><use href="#loop"/></svg>
+  <div class="wrap">
+    <span class="kick"><b>2</b> сборка</span>
+    <h2 class="ttl split">восемь <span class="talk c-coral">деталей</span></h2>
+    <p class="lead">Длинное слово пугает. gelmeyeceğini. Тринадцать букв.</p>
+    <p class="lead">Разбери. Каждая деталь делает одну работу. Как лего.</p>
+    <div class="scene" data-scene="factory">
+      <div class="stage" style="gap:16px;min-height:290px">
+        <div class="row" id="fA">
+          <div class="pair"><span class="chip deep" id="fA1">gel</span><div class="gl">корень</div></div>
+          <div class="pair"><span class="chip green" id="fA2">ip</span><div class="gl">«и»</div></div>
+        </div>
+        <div class="row" id="fB" style="gap:3px;flex-wrap:nowrap">
+          <div class="pair"><span class="chip deep sm" id="fB1">gel</span><div class="gl">корень</div></div>
+          <div class="pair"><span class="chip coral sm" id="fB2">me</span><div class="gl">не</div></div>
+          <div class="pair"><span class="chip white sm" id="fB3">y</span><div class="gl">мост</div></div>
+          <div class="pair"><span class="chip purple sm" id="fB4">ece</span><div class="gl">буд.</div></div>
+          <div class="pair flipbox"><span class="chip purple sm" id="fB5" style="position:relative"><span class="kk">k</span><span class="gg">ğ</span></span><div class="gl">k→ğ</div></div>
+          <div class="pair"><span class="chip yellow sm" id="fB6">i</span><div class="gl">его</div></div>
+          <div class="pair"><span class="chip pink sm" id="fB7">ni</span><div class="gl">падеж</div></div>
+        </div>
+        <div id="fRes" style="font:700 26px/1.2 var(--f-body);text-align:center;letter-spacing:-.02em"><span class="c-green">gelip</span> <span class="c-coral">gelmeyeceğini</span></div>
+      </div>
+      <p class="cap" data-caps='["Корень. gel. Голый глагол «прийти».","+ip. gelip. Это половина «да». Без лица. Без времени.","Теперь «нет». gel + me. Отрицание.","Две гласные столкнулись. Между ними y. Подушка.","+ece. Будущее время. Почти готово.","Тут было k. Пришла гласная. k сдалось и стало ğ.","+i. Чьё будущее? Его. Или твоё.","+ni. Падеж. Глагол sormak хочет объект. Объект — весь вопрос.","Итог. gelip gelmeyeceğini. Восемь деталей. Одна мысль."]'></p>
+      <div class="ctrl">
+        <button class="cbtn" data-prev aria-label="Назад"><svg><use href="#i-prev"/></svg></button>
+        <div class="dots"></div>
+        <button class="cbtn" data-redo aria-label="Заново"><svg><use href="#i-redo"/></svg></button>
+        <button class="cbtn main" data-next aria-label="Дальше"><svg><use href="#i-next"/></svg></button>
+      </div>
+      <div class="legend"><span><i style="background:var(--deep)"></i>корень</span><span><i style="background:var(--coral)"></i>отрицание</span><span><i style="background:var(--purple)"></i>время</span><span><i style="background:var(--yellow)"></i>лицо</span><span><i style="background:var(--pink)"></i>падеж</span></div>
+    </div>
+    <p class="lead" style="margin-top:22px">Лицо и время живут только во второй половине. Первая половина голая. gelip. Всегда.</p>
+  </div>
+</section>
+
+<!-- ============ 3. YES / NO ============ -->
+<section class="bg-sand" id="yesno">
+  <svg class="deco burst" style="left:-40px;bottom:40px" aria-hidden="true"><use href="#burst" stroke="var(--coral)"/></svg>
+  <div class="wrap">
+    <span class="kick"><b>3</b> зачем пара</span>
+    <h2 class="ttl split">убери «да». <span class="talk c-coral">смысл сломается.</span></h2>
+    <p class="lead">Пара работает как русское «ли». Убери половину и проверь сам.</p>
+    <div class="yn">
+      <div class="yn-card bg-green" id="ynYes">
+        <div class="bub lime">gelip</div>
+        <svg viewBox="0 0 220 200" aria-hidden="true" class="snake"><path d="M20 230C20 150 170 190 150 120S40 70 90 20" stroke="var(--lime)" stroke-width="54"/><use href="#ccc" x="64" y="-14" width="70" height="44" style="color:var(--ink)"/></svg>
+      </div>
+      <div class="yn-card bg-coral" id="ynNo">
+        <div class="bub white" style="color:var(--coral);font-size:15px;padding:12px 14px 14px">gelmeyeceğini</div>
+        <svg viewBox="0 0 220 200" aria-hidden="true" class="snake"><path d="M200 230C200 160 50 180 70 120S190 70 130 20" stroke="var(--yellow)" stroke-width="54"/><use href="#zz" x="140" y="0" width="56" height="50" style="color:var(--ink)"/></svg>
+      </div>
+    </div>
+    <div class="yn-out">
+      <span class="tr" id="ynTr">Gelip gelmeyeceğini sordu.</span>
+      <span id="ynRu" style="font-weight:600">Он спросил, придёшь ли ты.</span>
+      <div style="display:flex;gap:10px;justify-content:center;margin-top:14px;flex-wrap:wrap">
+        <button class="btn" id="ynBtn">убрать gelip</button>
+        <button class="say" id="ynSay" data-tr="Gelip gelmeyeceğini sordu." aria-label="Послушать"><svg><use href="#i-vol"/></svg></button>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:22px">Без пары это утверждение. Gelmeyeceğini söyledi. Сказал, что не придёт. Вопроса больше нет.</p>
+    <p class="lead">Пара держит оба варианта открытыми. Придёт. Не придёт. Решит кто-то другой.</p>
+  </div>
+</section>
+
+<!-- ============ 4. TIME ============ -->
+<section class="bg-deep" id="time">
+  <svg class="deco" style="right:12px;top:30px;width:70px;color:var(--pink)" aria-hidden="true"><use href="#spark"/></svg>
+  <div class="wrap">
+    <span class="kick"><b>4</b> время</span>
+    <h2 class="ttl split">вчера <span class="talk c-pink">или</span> завтра</h2>
+    <p class="lead">Время сидит в середине второй половины. Вариантов два.</p>
+    <p class="lead"><b class="c-lime" style="white-space:nowrap">-DIK</b> берёт прошлое и настоящее. <b class="c-pink" style="white-space:nowrap">-AcAK</b> берёт будущее.</p>
+    <div class="scene dark">
+      <div class="tline" id="tl">
+        <svg viewBox="0 0 300 70" preserveAspectRatio="none" aria-hidden="true"><path id="tlPath" d="M10 40C60 0 90 70 150 36S240 10 290 38" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round" vector-effect="non-scaling-stroke"/></svg>
+        <div id="tlDot" style="position:absolute;left:0;top:0;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;background:var(--pink);box-shadow:0 0 0 7px rgba(255,147,239,.3)"></div>
+      </div>
+      <div class="tline-stops">
+        <button data-t="0">вчера<br><small>geçmiş</small></button>
+        <button data-t="1">обычно / сейчас<br><small>şimdi</small></button>
+        <button data-t="2" class="on">завтра<br><small>gelecek</small></button>
+      </div>
+      <div class="tl-sent">
+        <div class="big"><span id="tlA">Gelip</span> <span id="tlB">gelme</span><span class="suf" id="tlS">yeceğini</span> <span id="tlC">bilmiyorum</span>.</div>
+        <p id="tlRu">Не знаю, придёт ли он.</p>
+        <p class="small" id="tlNote" style="opacity:.8">-ecek → -eceğ- перед гласной.</p>
+        <button class="say" id="tlSay" data-tr="Gelip gelmeyeceğini bilmiyorum." style="margin:12px auto 0;background:var(--pink)" aria-label="Послушать"><svg><use href="#i-vol"/></svg></button>
+      </div>
+    </div>
+    <p class="lead" style="margin-top:22px">Вчера и сейчас носят одну форму. gelip gelmediğini. Контекст решит. Русский тоже так умеет. «Не знаю, ходит ли он в зал». Ходит вообще. Не прямо сейчас.</p>
+  </div>
+</section>
+
+<!-- ============ 5. PERSONS ============ -->
+<section class="bg-concrete" id="persons">
+  <div class="wrap">
+    <span class="kick"><b>5</b> лицо</span>
+    <h2 class="ttl split">чей <span class="talk c-purple">приход?</span></h2>
+    <p class="lead">Лицо цепляется ко второй половине. Как бейдж. Нажми на цвет. Услышишь.</p>
+    <div class="pal stg" id="pal"></div>
+    <p class="lead" style="margin-top:22px">Ловушка. <b>geleceğini</b> у тебя и у него одинаковое. Senin или onun. Хочешь ясности, ставь местоимение спереди. <span class="tr">Onun gelip gelmeyeceğini sordu.</span></p>
+  </div>
+</section>
+
+<!-- ============ 6. CASES ============ -->
+<section class="bg-pink" id="cases">
+  <svg class="deco" style="right:-20px;top:60px;width:150px;color:var(--deep)" aria-hidden="true"><use href="#loop"/></svg>
+  <div class="wrap">
+    <span class="kick"><b>6</b> падеж</span>
+    <h2 class="ttl split">хвост <span class="talk" style="color:var(--deep)">выбирает</span> хозяин</h2>
+    <p class="lead" style="color:var(--deep)">Последняя буква не твоя. Её выбирает главный глагол. Спросил что? Уверен в чём? Решил о чём?</p>
+    <div class="tabs" id="caseTabs">
+      <button class="on" data-c="0">sordu</button>
+      <button data-c="1">bilmiyorum</button>
+      <button data-c="2">emin değilim</button>
+      <button data-c="3">karar veremedi</button>
+    </div>
+    <div class="case-out">
+      <div class="door"><span>хозяин хочет</span><span class="flipbox"><span class="chip coral" id="caseChip">-ı / -i</span></span></div>
+      <div class="big"><span>Gelip</span> <span>gelmeyeceği</span><span class="end" id="caseEnd">ni</span> <span id="caseMain">sordu</span>.</div>
+      <p id="caseRu" style="font-weight:600">Он спросил, придёт ли он.</p>
+      <button class="say" id="caseSay" data-tr="Gelip gelmeyeceğini sordu." style="margin:12px auto 0" aria-label="Послушать"><svg><use href="#i-vol"/></svg></button>
+    </div>
+    <p class="lead" style="margin-top:22px;color:var(--deep)">После лица -i/-ı вклеивается n. Подушка. Поэтому -ni, -nden, -ne.</p>
+  </div>
+</section>
+
+<!-- ============ 7. QUESTION WORDS ============ -->
+<section class="bg-yellow" id="qword">
+  <svg class="deco burst" style="right:-30px;bottom:30px" aria-hidden="true"><use href="#burst" stroke="#fff"/></svg>
+  <div class="wrap">
+    <span class="kick"><b>7</b> слово-вопрос</span>
+    <h2 class="ttl split" style="color:var(--green)">когда есть <span class="talk c-coral">ne</span>, пара не нужна</h2>
+    <p class="lead">Ne, kim, nerede, ne zaman, neden. Эти слова уже спрашивают. Им не нужно «да-нет».</p>
+    <div class="scene" data-scene="qword">
+      <div class="stage">
+        <div class="bub green qbub" style="color:var(--lime)"><span class="w" id="qNe">Ne zaman</span> <span class="w" id="qGel">geleceksin</span><span class="w" id="qQm">?</span></div>
+        <div class="row" id="qOut">
+          <span class="chip yellow" id="qC1">ne zaman</span>
+          <span class="chip ghost" id="qGhost">gelip</span>
+          <span class="chip coral" id="qC2">geleceğini</span>
+          <span class="chip purple" id="qC3">sordu</span>
+        </div>
+        <div id="qRu" style="font:600 16px/1.3 var(--f-body);text-align:center">Он спросил, когда ты придёшь.</div>
+      </div>
+      <p class="cap" data-caps='["Вопрос со словом. Ne zaman geleceksin? Когда придёшь?","Слово-вопрос остаётся. Оно и есть вопрос.","По привычке хочется gelip. Не надо.","gelip уходит. Отрицания тоже нет.","Глагол берёт -ecek, лицо, падеж. geleceğini.","Ne zaman geleceğini sordu. Коротко. Чисто."]'></p>
+      <div class="ctrl">
+        <button class="cbtn" data-prev aria-label="Назад"><svg><use href="#i-prev"/></svg></button>
+        <div class="dots"></div>
+        <button class="cbtn" data-redo aria-label="Заново"><svg><use href="#i-redo"/></svg></button>
+        <button class="cbtn main" data-next aria-label="Дальше"><svg><use href="#i-next"/></svg></button>
+      </div>
+    </div>
+    <div class="hm" style="margin-top:16px">
+      <div class="hm-row"><span class="root">kim</span><span class="form">Kimin geldiğini bilmiyorum.<small>Не знаю, кто пришёл.</small></span><button class="say" data-tr="Kimin geldiğini bilmiyorum."><svg><use href="#i-vol"/></svg></button></div>
+      <div class="hm-row"><span class="root">nerede</span><span class="form">Nerede oturduğunu sordu.<small>Спросил, где ты живёшь.</small></span><button class="say" data-tr="Nerede oturduğunu sordu."><svg><use href="#i-vol"/></svg></button></div>
+      <div class="hm-row"><span class="root">neden</span><span class="form">Neden gelmediğini anlamadım.<small>Не понял, почему он не пришёл.</small></span><button class="say" data-tr="Neden gelmediğini anlamadım."><svg><use href="#i-vol"/></svg></button></div>
+    </div>
+    <p class="lead" style="margin-top:20px;color:var(--green)">Ловушка. Kim в такой фразе часто носит родительный. <b>Kimin</b> geldiğini. Кто пришёл. Чей приход.</p>
+  </div>
+</section>
+
+<!-- ============ 8. OLUP ============ -->
+<section class="bg-green" id="olup" style="color:#fff">
+  <div class="wrap">
+    <span class="kick"><b>8</b> без глагола</span>
+    <h2 class="ttl split" style="color:var(--lime)">нет глагола? <span class="talk" style="color:#fff">займи olmak</span></h2>
+    <p class="lead">Evli mi? Женат? Тут нет глагола. Только слово.</p>
+    <p class="lead">Глагол одалживаем у olmak. Пара получается сама. <b>olup olmadığını</b>. Переверни карточки.</p>
+    <div class="cards" id="cards">
+      <button class="fc"><div class="fc-in"><div class="fc-f bg-lime" style="color:var(--green)"><small>прямой вопрос</small><strong>Evli mi?</strong></div><div class="fc-b bg-purple" style="color:#fff"><small>пересказ</small><strong>Evli olup olmadığını sordu.</strong><em>Спросил, женат ли он.</em></div></div></button>
+      <button class="fc"><div class="fc-in"><div class="fc-f bg-yellow" style="color:var(--green)"><small>прямой вопрос</small><strong>Evde mi?</strong></div><div class="fc-b bg-coral" style="color:#fff"><small>пересказ</small><strong>Evde olup olmadığını bilmiyorum.</strong><em>Не знаю, дома ли он.</em></div></div></button>
+      <button class="fc"><div class="fc-in"><div class="fc-f bg-pink" style="color:var(--deep)"><small>прямой вопрос</small><strong>Doğru mu?</strong></div><div class="fc-b bg-deep" style="color:#fff"><small>пересказ</small><strong>Doğru olup olmadığını merak ediyorum.</strong><em>Интересно, правда ли это.</em></div></div></button>
+      <button class="fc"><div class="fc-in"><div class="fc-f bg-sand" style="color:var(--coral)"><small>прямой вопрос</small><strong>Öğrenci misin?</strong></div><div class="fc-b bg-ink" style="color:var(--lime)"><small>пересказ</small><strong>Öğrenci olup olmadığımı sordu.</strong><em>Спросил, студент ли я.</em></div></div></button>
+    </div>
+    <p class="lead" style="margin-top:22px">Var и yok тоже так. Var mı? → <span class="tr">olup olmadığını</span>. Odada su olup olmadığını sordu. Спросил, есть ли в комнате вода.</p>
+  </div>
+</section>
+
+<!-- ============ 9. DIYE (chat) ============ -->
+<section class="bg-concrete" id="diye">
+  <div class="wrap">
+    <span class="kick"><b>+</b> разговорный чит</span>
+    <h2 class="ttl split">в чате <span class="talk c-purple">можно проще</span></h2>
+    <p class="lead">Устно турки часто не строят пару. Берут прямой вопрос целиком. Сзади ставят <b>diye</b>.</p>
+    <div class="chat" id="chat">
+      <div class="chat-h"><i>M</i><div>Mert<em>в сети</em></div></div>
+      <div class="msg in">Ayşe ne istedi?<small>Что Айше хотела?</small></div>
+      <div class="msg out"><span class="tr">Gelecek misin diye sordu.</span><small>«Придёшь?» — спросила.</small></div>
+      <div class="msg in">Sen ne dedin?<small>А ты что?</small></div>
+      <div class="msg out"><span class="tr">Gelip gelmeyeceğimi bilmiyorum dedim.</span><small>Сказал, не знаю, приду ли.</small></div>
+      <div class="typing"><i></i><i></i><i></i></div>
+    </div>
+    <div class="vs">
+      <div class="bg-lime" style="color:var(--green)"><b>diye</b>устно, в чатах, в сериалах. Быстро.</div>
+      <div class="bg-purple" style="color:#fff"><b>пара</b>письмо, экзамен, эссе B2. Аккуратно.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HARMONY ============ -->
+<section class="bg-sand" id="harmony">
+  <div class="wrap">
+    <span class="kick"><b>+</b> гармония</span>
+    <h2 class="ttl split" style="color:var(--coral)">гласные <span class="talk" style="color:var(--deep)">подстраиваются</span></h2>
+    <p class="lead">-ip бывает четырёх цветов. После гласной встаёт y. t в git становится d. Нажми на строку.</p>
+    <div class="hm" id="hm">
+      <div class="hm-row"><span class="root">gel</span><span class="form">gel<mark>ip</mark> gelmeyeceğini<small>придёт ли</small></span><button class="say" data-tr="gelip gelmeyeceğini"><svg><use href="#i-vol"/></svg></button></div>
+      <div class="hm-row"><span class="root">yap</span><span class="form">yap<mark>ıp</mark> yapmayacağını<small>сделает ли</small></span><button class="say" data-tr="yapıp yapmayacağını"><svg><use href="#i-vol"/></svg></button></div>
+      <div class="hm-row"><span class="root">gör</span><span class="form">gör<mark>üp</mark> görmeyeceğini<small>увидит ли</small></span><button class="say" data-tr="görüp görmeyeceğini"><svg><use href="#i-vol"/></svg></button></div>
+      <div class="hm-row"><span class="root">oku</span><span class="form">oku<mark>yup</mark> okumayacağını<small>прочитает ли · y-мост</small></span><button class="say" data-tr="okuyup okumayacağını"><svg><use href="#i-vol"/></svg></button></div>
+      <div class="hm-row"><span class="root">git</span><span class="form">gi<mark class="s">d</mark><mark>ip</mark> gitmeyeceğini<small>пойдёт ли · t → d</small></span><button class="say" data-tr="gidip gitmeyeceğini"><svg><use href="#i-vol"/></svg></button></div>
+      <div class="hm-row"><span class="root">ara</span><span class="form">ara<mark>yıp</mark> aramadığını<small>звонил ли · прошлое</small></span><button class="say" data-tr="arayıp aramadığını"><svg><use href="#i-vol"/></svg></button></div>
+    </div>
+    <p class="lead" style="margin-top:20px">Вторая половина проще. Отрицание -me/-ma. Дальше только две краски. Передняя e/i. Задняя a/ı.</p>
+  </div>
+</section>
+
+<!-- ============ BUILDER ============ -->
+<section class="bg-concrete" id="builder">
+  <div class="wrap">
+    <span class="kick"><b>9</b> конструктор</span>
+    <h2 class="ttl split"><span class="circ">собери<svg viewBox="0 0 100 50" preserveAspectRatio="none"><path pathLength="1" d="M8 30C4 10 60 2 88 12 104 18 96 40 60 46 24 50 2 38 12 22 18 14 40 6 62 6"/></svg></span> <span class="talk c-coral">свою</span> фразу</h2>
+    <p class="lead">Выбери детали. Фраза соберётся сама. Проверь, как она звучит.</p>
+    <div class="builder">
+      <div class="b-visual">
+        <div class="bigtalk" aria-hidden="true">soru</div>
+        <svg class="deco" style="left:14px;top:12px;width:70px;color:var(--ink)" aria-hidden="true"><use href="#loop"/></svg>
+        <div class="b-out"><div class="tr" id="bTr"></div><p id="bRu"></p><p class="small" id="bGl" style="margin-top:6px"></p></div>
+      </div>
+      <div class="b-form">
+        <label>глагол</label><div class="seg" id="bVerb"></div>
+        <label>когда</label><div class="seg" id="bTime"></div>
+        <label>чей</label><div class="seg" id="bPers"></div>
+        <label>хозяин</label><div class="seg" id="bMain"></div>
+        <div class="b-actions"><button class="btn" id="bSay"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><use href="#i-vol"/></svg>послушать</button><button class="btn ghost" id="bRnd">случайно</button></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUIZ ============ -->
+<section class="bg-purple" id="quiz">
+  <svg class="deco burst" style="left:-36px;top:30px" aria-hidden="true"><use href="#burst" stroke="var(--lime)"/></svg>
+  <div class="wrap">
+    <span class="kick"><b>10</b> тест</span>
+    <h2 class="ttl split">шесть <span class="talk c-lime">вопросов</span></h2>
+    <p class="lead">Без таймера. Ошибся, прочитай объяснение. Оно короткое.</p>
+    <div class="quiz">
+      <div id="qBody">
+        <div class="q-top"><span id="qNum">1 / 6</span><span id="qScore">0 ✓</span></div>
+        <div class="q-prog"><b id="qProg"></b></div>
+        <p class="q-text" id="qText"></p>
+        <div class="q-opts" id="qOpts"></div>
+        <div class="q-exp" id="qExp"></div>
+        <button class="btn ink q-next" id="qNext">дальше</button>
+      </div>
+      <div class="q-final" id="qFinal">
+        <div class="score" id="qRes">6/6</div>
+        <p class="q-text" id="qMsg" style="text-align:center"></p>
+        <button class="btn" id="qAgain">ещё раз</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHEAT SHEET ============ -->
+<section class="bg-concrete" id="cheat">
+  <div class="wrap">
+    <span class="kick"><b>✓</b> шпаргалка</span>
+    <h2 class="ttl split">вся тема <span class="talk c-purple">на одном экране</span></h2>
+    <div class="tiles stg">
+      <div class="tile bg-purple" style="color:#fff"><small>формула</small><strong>V-ip<br>V-me-…-ini</strong><p>да + нет = ли</p><svg class="dec" style="color:var(--pink)"><use href="#spark"/></svg></div>
+      <div class="tile bg-lime" style="color:var(--green)"><small>будущее</small><strong>gelip gelmeyeceğini</strong><p>придёт ли</p></div>
+      <div class="tile bg-coral" style="color:#fff"><small>прошлое и сейчас</small><strong>gelip gelmediğini</strong><p>пришёл ли / приходит ли</p></div>
+      <div class="tile bg-yellow" style="color:var(--green)"><small>лицо</small><strong>-ımı -ını -ını -ımızı -ınızı -larını</strong></div>
+      <div class="tile bg-pink" style="color:var(--deep)"><small>хозяин</small><strong style="white-space:nowrap;font-size:clamp(15px,4.4vw,21px)">sordu → -ni<br>emin → -nden<br>karar → -ne</strong></div>
+      <div class="tile bg-green" style="color:var(--lime)"><small>слово-вопрос</small><strong>ne zaman geleceğini</strong><p>без пары</p></div>
+      <div class="tile bg-deep" style="color:#fff"><small>без глагола</small><strong>olup olmadığını</strong><p>evli, evde, var</p></div>
+      <div class="tile bg-sand" style="color:var(--coral)"><small>устно</small><strong>gelecek misin diye</strong><p>чат, не эссе</p></div>
+      <div class="tile bg-ink wide" style="color:var(--lime)"><small style="color:#fff">ловушки</small><strong style="font-size:20px">k → ğ · t → d (gidip) · y после гласной · geleceğini = твой или его</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OUTRO ============ -->
+<section class="outro" id="outro">
+  <svg class="deco burst" style="right:-30px;top:30px" aria-hidden="true"><use href="#burst" stroke="var(--yellow)"/></svg>
+  <svg class="deco" style="left:20px;bottom:60px;width:80px;color:var(--lime)" aria-hidden="true"><use href="#ccc"/></svg>
+  <div class="wm" id="outWm"><span class="a">dolaylı</span><span class="b">soru</span></div>
+  <div class="story-end">
+    <p>Суббота прошла.</p>
+    <p>Список Айше полный. Ты в нём есть.</p>
+    <p>Мерта в нём нет. Мерт заболел.</p>
+    <p>Свой день рождения пропустил.</p>
+  </div>
+  <div class="last">Gelip gelmeyeceğini kimse sormadı.</div>
+  <p class="small" style="margin-top:8px">Никто не спросил, придёт ли он сам.</p>
+  <button class="say" data-tr="Gelip gelmeyeceğini kimse sormadı." style="margin:16px auto 0;background:var(--pink)" aria-label="Послушать"><svg><use href="#i-vol"/></svg></button>
+</section>
+<div class="colorstrip" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+<footer>B2-09 · Косвенный вопрос · gelip gelmeyeceğini sordu</footer>
+
+<script>
+document.documentElement.classList.add('js');
+
+/* ---------- speech ---------- */
+var trVoice=null;
+function pickVoice(){ if(!('speechSynthesis' in window))return; var v=speechSynthesis.getVoices(); trVoice=v.find(function(x){return /^tr/i.test(x.lang)})||null; }
+if('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged=pickVoice; }
+function say(text,btn){
+  if(!('speechSynthesis' in window))return;
+  speechSynthesis.cancel();
+  var u=new SpeechSynthesisUtterance(text); u.lang='tr-TR'; u.rate=.88; if(trVoice)u.voice=trVoice;
+  if(btn){btn.classList.add('on'); u.onend=u.onerror=function(){btn.classList.remove('on')};}
+  speechSynthesis.speak(u);
+}
+document.addEventListener('click',function(e){var b=e.target.closest('.say[data-tr]'); if(b){e.stopPropagation(); say(b.dataset.tr,b);}});
+
+/* ---------- Turkish morphology for builder + palette ---------- */
+var VERBS={
+  gel:{ip:'gelip',neg:'gelme',back:false,ru:['приду','придёшь','придёт','придём','придёте','придут'],ruP:['пришёл','пришёл','пришёл','пришли','пришли','пришли'],gl:'прийти'},
+  yap:{ip:'yapıp',neg:'yapma',back:true,ru:['сделаю','сделаешь','сделает','сделаем','сделаете','сделают'],ruP:['сделал','сделал','сделал','сделали','сделали','сделали'],gl:'сделать'},
+  oku:{ip:'okuyup',neg:'okuma',back:true,ru:['прочитаю','прочитаешь','прочитает','прочитаем','прочитаете','прочитают'],ruP:['прочитал','прочитал','прочитал','прочитали','прочитали','прочитали'],gl:'прочитать'},
+  git:{ip:'gidip',neg:'gitme',back:false,ru:['пойду','пойдёшь','пойдёт','пойдём','пойдёте','пойдут'],ruP:['пошёл','пошёл','пошёл','пошли','пошли','пошли'],gl:'пойти'},
+  ara:{ip:'arayıp',neg:'arama',back:true,ru:['позвоню','позвонишь','позвонит','позвоним','позвоните','позвонят'],ruP:['позвонил','позвонил','позвонил','позвонили','позвонили','позвонили'],gl:'позвонить'},
+  'çalış':{ip:'çalışıp',neg:'çalışma',back:true,ru:['буду заниматься','будешь заниматься','будет заниматься','будем заниматься','будете заниматься','будут заниматься'],ruP:['занимался','занимался','занимался','занимались','занимались','занимались'],gl:'заниматься'}
+};
+var PERS=[{tr:'benim',ru:'я',name:'Benim'},{tr:'senin',ru:'ты',name:'Senin'},{tr:'onun',ru:'он',name:'Onun'},{tr:'bizim',ru:'мы',name:'Bizim'},{tr:'sizin',ru:'вы',name:'Sizin'},{tr:'onların',ru:'они',name:'Onların'}];
+var MAINS=[{tr:'sordu',c:'acc',ru:'Он спросил'},{tr:'bilmiyorum',c:'acc',ru:'Я не знаю'},{tr:'merak ediyorum',c:'acc',ru:'Мне интересно'},{tr:'emin değilim',c:'abl',ru:'Я не уверен'},{tr:'karar veremedi',c:'dat',ru:'Он не смог решить'}];
+var PSUF=[['ım','im'],['ın','in'],['ı','i'],['ımız','imiz'],['ınız','iniz'],null];
+function form(vk,future,p,cs){
+  var v=VERBS[vk],B=v.back?0:1;
+  var base=future? v.neg+(v.back?'yacak':'yecek') : v.neg+(v.back?'dık':'dik');
+  var P,third=(p===2||p===5);
+  if(p===5) P=base+(v.back?'ları':'leri');
+  else P=base.slice(0,-1)+'ğ'+PSUF[p][B];
+  var end;
+  if(cs==='acc') end=(third?'n':'')+(v.back?'ı':'i');
+  else if(cs==='abl') end=(third?'n':'')+(v.back?'dan':'den');
+  else end=(third?'n':'')+(v.back?'a':'e');
+  return {first:v.ip,P:P,end:end,word:P+end};
+}
+function ruSentence(vk,future,p,mi){
+  var v=VERBS[vk],f=(future?v.ru:v.ruP)[p].split(' ');
+  var head=f.shift(), tail=f.length?' '+f.join(' '):'';
+  return MAINS[mi].ru+', '+head+' ли '+PERS[p].ru+tail+'.';
+}
+
+/* ---------- palette (persons) ---------- */
+(function(){
+  var pal=document.getElementById('pal'),codes=['-eceğ·im·i','-eceğ·in·i','-eceğ·i·ni','-eceğ·imiz·i','-eceğ·iniz·i','-ecek·leri·ni'],
+      ru=['приду ли я','придёшь ли ты','придёт ли он','придём ли мы','придёте ли вы','придут ли они'],
+      lbl=['ед. ч.','ед. ч.','ед. ч.','мн. ч.','мн. ч.','мн. ч.'];
+  PERS.forEach(function(p,i){
+    var f=form('gel',true,i,'acc');
+    var b=document.createElement('button'); b.className='sw';
+    var w=f.P.replace(/(ğ|k)(.*)$/,function(m,a,rest){return a+'<u>'+rest+'</u>'})+f.end;
+    b.innerHTML='<small>'+lbl[i]+' · '+(i+1)+'</small><strong>'+p.name+'</strong><span class="w">gelip '+w+'</span><span class="code">'+codes[i]+' · '+ru[i]+'</span><span class="say" aria-hidden="true"><svg><use href="#i-vol"/></svg></span>';
+    b.addEventListener('click',function(){ say(p.tr+' gelip '+f.word, b.querySelector('.say')); if(window.gsap)gsap.fromTo(b,{rotation:-3,scale:.94},{rotation:0,scale:1,duration:.7,ease:'elastic.out(1,.4)'}); });
+    pal.appendChild(b);
+  });
+})();
+
+/* ---------- yes/no toggle ---------- */
+(function(){
+  var on=true,btn=document.getElementById('ynBtn'),tr=document.getElementById('ynTr'),ru=document.getElementById('ynRu'),yes=document.getElementById('ynYes'),s=document.getElementById('ynSay');
+  btn.addEventListener('click',function(){
+    on=!on;
+    yes.classList.toggle('off',!on);
+    var t=on?'Gelip gelmeyeceğini sordu.':'Gelmeyeceğini söyledi.';
+    var r=on?'Он спросил, придёшь ли ты.':'Он сказал, что ты не придёшь. Вопроса нет.';
+    btn.textContent=on?'убрать gelip':'вернуть gelip';
+    s.dataset.tr=t;
+    if(window.gsap){
+      gsap.timeline().to([tr,ru],{rotationX:90,duration:.18,ease:'power2.in',onComplete:function(){tr.textContent=t;ru.textContent=r;}})
+        .to([tr,ru],{rotationX:0,duration:.5,ease:'back.out(2.5)'});
+      gsap.fromTo(yes,{rotation:on?-6:0,y:on?20:0},{rotation:on?0:-4,y:on?0:16,duration:.7,ease:'elastic.out(1,.45)'});
+    } else {tr.textContent=t;ru.textContent=r;}
+  });
+})();
+
+/* ---------- timeline ---------- */
+var TL=[
+  {a:'Gelip',b:'gelme',s:'diğini',c:'bilmiyorum',ru:'Не знаю, пришёл ли он.',n:'-dik → -diğ- перед гласной. Прошлое.'},
+  {a:'Gelip',b:'gelme',s:'diğini',c:'bilmiyorum',ru:'Не знаю, приходит ли он (вообще).',n:'Та же форма. -DIK держит и «сейчас».'},
+  {a:'Gelip',b:'gelme',s:'yeceğini',c:'bilmiyorum',ru:'Не знаю, придёт ли он.',n:'-ecek → -eceğ- перед гласной. Будущее.'}
+];
+(function(){
+  var dot=document.getElementById('tlDot'),path=document.getElementById('tlPath'),box=document.getElementById('tl'),cur=2,btns=[].slice.call(document.querySelectorAll('.tline-stops button'));
+  var pos=[.03,.5,.97];
+  function place(t){
+    var L=path.getTotalLength(),pt=path.getPointAtLength(L*t),r=box.getBoundingClientRect();
+    return {x:pt.x/300*r.width,y:pt.y/70*r.height};
+  }
+  function setDot(t){var p=place(t);dot.style.left=p.x+'px';dot.style.top=p.y+'px';}
+  setDot(pos[cur]);
+  window.addEventListener('resize',function(){setDot(pos[cur])});
+  window.addEventListener('load',function(){setDot(pos[cur])});
+  function go(i){
+    var from=pos[cur]; cur=i; var d=TL[i];
+    btns.forEach(function(b,k){b.classList.toggle('on',k===i)});
+    var S=document.getElementById('tlS');
+    document.getElementById('tlSay').dataset.tr=d.a+' '+d.b+d.s+' '+d.c+'.';
+    if(window.gsap){
+      var o={t:from}; gsap.to(o,{t:pos[i],duration:.9,ease:'power2.inOut',onUpdate:function(){setDot(o.t)}});
+      gsap.timeline().to(S,{rotationX:90,scale:.6,duration:.2,ease:'power2.in',onComplete:function(){S.textContent=d.s;}})
+        .to(S,{rotationX:0,scale:1,duration:.6,ease:'elastic.out(1,.45)'})
+        .fromTo(['#tlRu','#tlNote'],{y:14},{y:0,duration:.4,ease:'back.out(2)',onStart:function(){document.getElementById('tlRu').textContent=d.ru;document.getElementById('tlNote').textContent=d.n;}},'<');
+    } else {setDot(pos[i]);S.textContent=d.s;document.getElementById('tlRu').textContent=d.ru;document.getElementById('tlNote').textContent=d.n;}
+  }
+  btns.forEach(function(b,i){b.addEventListener('click',function(){go(i)})});
+  box.addEventListener('click',function(e){var r=box.getBoundingClientRect(),x=(e.clientX-r.left)/r.width;go(x<.33?0:x<.66?1:2)});
+})();
+
+/* ---------- cases ---------- */
+var CASES=[
+  {chip:'-ı / -i',end:'ni',main:'sordu',ru:'Он спросил, придёт ли он.'},
+  {chip:'-ı / -i',end:'ni',main:'bilmiyorum',ru:'Я не знаю, придёт ли он.'},
+  {chip:'-dan / -den',end:'nden',main:'emin değilim',ru:'Я не уверен, что он придёт.'},
+  {chip:'-a / -e',end:'ne',main:'karar veremedi',ru:'Он не смог решить, придёт ли.'}
+];
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('#caseTabs button')),E=document.getElementById('caseEnd'),C=document.getElementById('caseChip'),M=document.getElementById('caseMain'),R=document.getElementById('caseRu'),S=document.getElementById('caseSay');
+  tabs.forEach(function(t,i){t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.toggle('on',x===t)});
+    var d=CASES[i]; S.dataset.tr='Gelip gelmeyeceği'+d.end+' '+d.main+'.';
+    function set(){E.textContent=d.end;C.textContent=d.chip;M.textContent=d.main;R.textContent=d.ru;}
+    if(window.gsap){
+      gsap.timeline().to([E,C],{rotationX:-90,duration:.18,ease:'power2.in',onComplete:set})
+        .to([E,C],{rotationX:0,duration:.6,ease:'elastic.out(1,.45)'})
+        .fromTo(M,{x:30,rotation:6},{x:0,rotation:0,duration:.5,ease:'back.out(2.5)'},'<')
+        .fromTo(R,{y:12},{y:0,duration:.4,ease:'back.out(2)'},'<.05');
+    } else set();
+  })});
+})();
+
+/* ---------- flip cards ---------- */
+[].forEach.call(document.querySelectorAll('.fc'),function(c){c.addEventListener('click',function(){c.classList.toggle('on'); if(c.classList.contains('on'))say(c.querySelector('.fc-b strong').textContent);});});
+
+/* ---------- builder ---------- */
+(function(){
+  var st={v:'gel',t:1,p:1,m:0};
+  function seg(id,items,key){
+    var el=document.getElementById(id);
+    items.forEach(function(it){var b=document.createElement('button');b.textContent=it[1];b.dataset.v=it[0];b.addEventListener('click',function(){st[key]=key==='v'?it[0]:+it[0];render(true)});el.appendChild(b);});
+  }
+  seg('bVerb',Object.keys(VERBS).map(function(k){return [k,k]}),'v');
+  seg('bTime',[[0,'прошлое / сейчас'],[1,'будущее']],'t');
+  seg('bPers',PERS.map(function(p,i){return [i,p.ru]}),'p');
+  seg('bMain',MAINS.map(function(m,i){return [i,m.tr]}),'m');
+  var tr=document.getElementById('bTr'),ru=document.getElementById('bRu'),gl=document.getElementById('bGl'),text='';
+  function render(anim){
+    [['bVerb','v'],['bTime','t'],['bPers','p'],['bMain','m']].forEach(function(a){[].forEach.call(document.getElementById(a[0]).children,function(b){b.classList.toggle('on',String(st[a[1]])===b.dataset.v)})});
+    var m=MAINS[st.m],f=form(st.v,!!st.t,st.p,m.c);
+    var pron=PERS[st.p].tr; pron=pron[0].toUpperCase()+pron.slice(1);
+    text=pron+' '+f.first+' '+f.word+' '+m.tr+'.';
+    tr.innerHTML='<span>'+pron+'</span> <span style="color:#fff">'+f.first+'</span> <span>'+f.P+'<b style="background:var(--coral);color:#fff;border-radius:8px;padding:0 4px">'+f.end+'</b></span> <span>'+m.tr+'.</span>';
+    ru.textContent=ruSentence(st.v,!!st.t,st.p,st.m);
+    gl.textContent=VERBS[st.v].gl+' · '+(st.t?'-AcAK':'-DIK')+' · '+PERS[st.p].ru+' · падеж '+({acc:'-ı',abl:'-dan',dat:'-a'})[m.c];
+    if(anim&&window.gsap) gsap.fromTo(tr.children,{yPercent:60,rotation:6},{yPercent:0,rotation:0,duration:.6,stagger:.05,ease:'back.out(2.2)'});
+  }
+  document.getElementById('bSay').addEventListener('click',function(){say(text,this)});
+  document.getElementById('bRnd').addEventListener('click',function(){var k=Object.keys(VERBS);st={v:k[Math.random()*k.length|0],t:Math.random()*2|0,p:Math.random()*6|0,m:Math.random()*5|0};render(true)});
+  render(false);
+})();
+
+/* ---------- quiz ---------- */
+var QZ=[
+  {q:'«Придёшь?» — спросил он. Как пересказать?',o:['Gelip gelmeyeceğini sordu.','Gelecek mi sordu.','Gelip gelmediğini sordu.','Gelmeyeceğini sordu.'],a:0,e:'Будущее → -ecek. Пара gelip + gelmeyeceğini. Вариант с -diğini про прошлое. Без gelip это не вопрос.'},
+  {q:'«Не знаю, звонил ли он».',o:['Arayıp aramayacağını bilmiyorum.','Arayıp aramadığını bilmiyorum.','Arayıp aramadığından bilmiyorum.','Arayacak mı bilmiyorum.'],a:1,e:'Звонил — прошлое. Значит -DIK: aramadığını. bilmek хочет -ı, не -dan.'},
+  {q:'«Я не уверен, придёт ли он». Какой хвост?',o:['gelip gelmeyeceğini emin değilim','gelip gelmeyeceğine emin değilim','gelip gelmeyeceğinden emin değilim','gelip gelmeyecek emin değilim'],a:2,e:'emin olmak хочет -dan/-den. Уверен в чём? После лица n-подушка: -nden.'},
+  {q:'«Он спросил, когда ты придёшь».',o:['Ne zaman gelip gelmeyeceğini sordu.','Ne zaman geleceğini sordu.','Ne zaman geleceksin sordu.','Ne zaman gelip geleceğini sordu.'],a:1,e:'Есть ne zaman. Слово-вопрос уже спрашивает. Пара не нужна.'},
+  {q:'«Не знаю, женат ли он».',o:['Evli olmadığını bilmiyorum.','Evli mi olmadığını bilmiyorum.','Evli olup olmadığını bilmiyorum.','Evlip evli değilini bilmiyorum.'],a:2,e:'Глагола нет. Одалживаем olmak: olup olmadığını.'},
+  {q:'«Они спросили, пойду ли я». Найди без ошибок.',o:['Gitip gitmeyeceğimi sordular.','Gidip gitmeyeceğini sordular.','Gidip gitmeyeceğimi sordular.','Gidip gidmeyeceğimi sordular.'],a:2,e:'git + ip → gidip (t→d перед гласной). Но gitme: после t согласная m, смягчения нет. Моё будущее: -eceğ + im + i = gitmeyeceğimi.'}
+];
+(function(){
+  var i=0,score=0,T=document.getElementById('qText'),O=document.getElementById('qOpts'),X=document.getElementById('qExp'),N=document.getElementById('qNext');
+  function show(){
+    var q=QZ[i]; document.getElementById('qNum').textContent=(i+1)+' / '+QZ.length; document.getElementById('qScore').textContent=score+' ✓';
+    document.getElementById('qProg').style.width=(i/QZ.length*100)+'%';
+    T.textContent=q.q; O.innerHTML=''; X.classList.remove('on'); N.classList.remove('on');
+    q.o.forEach(function(t,k){var b=document.createElement('button');b.textContent=t;b.addEventListener('click',function(){pick(k,b)});O.appendChild(b);});
+    if(window.gsap) gsap.fromTo(O.children,{x:30,rotation:2},{x:0,rotation:0,duration:.5,stagger:.06,ease:'back.out(2)'});
+  }
+  function pick(k,b){
+    var q=QZ[i],bs=O.children;
+    [].forEach.call(bs,function(x){x.disabled=true});
+    bs[q.a].classList.add('ok');
+    if(k===q.a){score++;burst(b);} else {b.classList.add('bad'); if(window.gsap)gsap.fromTo(b,{x:-8},{x:0,duration:.5,ease:'elastic.out(1,.3)'});}
+    X.innerHTML='<b>'+(k===q.a?'Да. ':'Мимо. ')+'</b>'+q.e; X.classList.add('on'); N.classList.add('on');
+    N.textContent=i<QZ.length-1?'дальше':'результат';
+    document.getElementById('qScore').textContent=score+' ✓';
+  }
+  N.addEventListener('click',function(){i++; if(i<QZ.length)show(); else fin();});
+  function fin(){
+    document.getElementById('qBody').style.display='none'; var F=document.getElementById('qFinal'); F.classList.add('on');
+    document.getElementById('qRes').textContent=score+'/'+QZ.length;
+    document.getElementById('qMsg').textContent=score===6?'Чисто. Пара сидит в голове.':score>=4?'Почти. Перечитай шпаргалку. Один раз.':'Норм. Вернись к сборке по деталям. Потом снова сюда.';
+    if(score>=4)for(var n=0;n<3;n++)setTimeout(function(){burst(F)},n*250);
+  }
+  document.getElementById('qAgain').addEventListener('click',function(){i=0;score=0;document.getElementById('qFinal').classList.remove('on');document.getElementById('qBody').style.display='';show();});
+  function burst(el){
+    if(!window.gsap||matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+    var r=el.getBoundingClientRect(),cols=['#9867F9','#FF93EF','#FF7664','#FFD500','#B6F23C','#14C25A'];
+    for(var n=0;n<26;n++){var c=document.createElement('i');c.className='confetti';c.style.background=cols[n%6];document.body.appendChild(c);
+      gsap.set(c,{x:r.left+r.width/2,y:r.top+r.height/2,rotation:Math.random()*360});
+      gsap.to(c,{x:'+='+(Math.random()*360-180),y:'+='+(Math.random()*-260-40),rotation:'+=520',duration:.8,ease:'power2.out'});
+      gsap.to(c,{y:'+=420',opacity:0,delay:.75,duration:1.1,ease:'power1.in',onComplete:function(){this.targets()[0].remove()}});}
+  }
+  show();
+})();
+
+/* ---------- scene engine (multi-step timelines) ---------- */
+function makeScene(root,build){
+  var cap=root.querySelector('.cap'),caps=JSON.parse(cap.dataset.caps),dotsEl=root.querySelector('.dots'),n=caps.length;
+  cap.textContent=caps[n-1];
+  for(var k=0;k<n;k++){var d=document.createElement('button');d.setAttribute('aria-label','Шаг '+(k+1));(function(k){d.addEventListener('click',function(){goTo(k)})})(k);dotsEl.appendChild(d);}
+  var dots=[].slice.call(dotsEl.children);
+  function mark(k){dots.forEach(function(d,j){d.classList.toggle('on',j===k)}); if(cap.textContent!==caps[k]){cap.textContent=caps[k]; if(window.gsap)gsap.fromTo(cap,{y:10},{y:0,duration:.35,ease:'back.out(2)'});}}
+  if(!window.gsap||window.NOANIM){mark(n-1);return;}
+  var tl=gsap.timeline({paused:true,onUpdate:function(){var l=tl.currentLabel();if(l)mark(+l.slice(1))}});
+  build(tl);
+  (window.__scenes=window.__scenes||[]).push(tl);
+  function goTo(k){tl.tweenTo('s'+k,{duration:Math.min(1.4,Math.abs(tl.labels['s'+k]-tl.time())*.6+.3)});}
+  function cur(){return +((tl.currentLabel()||'s0').slice(1));}
+  root.querySelector('[data-next]').addEventListener('click',function(){var c=cur(); if(tl.time()>=tl.labels['s'+(n-1)]-.01)return; tl.tweenTo('s'+Math.min(n-1,c+1));});
+  root.querySelector('[data-prev]').addEventListener('click',function(){var c=cur(); goTo(Math.max(0,c-(tl.time()-tl.labels['s'+c]>.05?0:1)));});
+  root.querySelector('[data-redo]').addEventListener('click',function(){tl.restart();});
+  mark(0); tl.progress(1).progress(0);
+  ScrollTrigger.create({trigger:root,start:'top 70%',once:true,onEnter:function(){tl.play(0)}});
+  return tl;
+}
+function hold(tl,t){tl.to({},{duration:t||1.3});}
+
+function initGSAP(){
+  var G=window.gsap&&window.ScrollTrigger;
+  if(!G){[].forEach.call(document.querySelectorAll('.rv,.stg'),function(e){e.classList.add('in')});
+    document.querySelectorAll('[data-scene]').forEach(function(r){makeScene(r,function(){})}); return;}
+  var reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  gsap.registerPlugin(ScrollTrigger); if(window.SplitText)gsap.registerPlugin(SplitText); if(window.MotionPathPlugin)gsap.registerPlugin(MotionPathPlugin);
+  document.documentElement.classList.add('gs');
+  ScrollTrigger.config({ignoreMobileResize:true});
+
+  if(reduce){window.NOANIM=true;document.querySelectorAll('[data-scene]').forEach(function(r){makeScene(r)});return;}
+
+  /* hero loops */
+  var snake=document.querySelector('#heroSnake path');
+  var L=snake.getTotalLength(); gsap.fromTo(snake,{strokeDasharray:L,strokeDashoffset:L},{strokeDashoffset:0,duration:1.6,ease:'power3.out',delay:.3});
+  gsap.to('#heroSnake',{rotation:3,transformOrigin:'50% 100%',yoyo:true,repeat:-1,duration:2.4,ease:'sine.inOut'});
+  gsap.to('#heroLogo',{rotation:-5,y:-6,yoyo:true,repeat:-1,duration:1.8,ease:'sine.inOut',delay:1.4});
+  var oo=gsap.utils.toArray('.hero-giant .ln:nth-child(2) span,.hero-giant .ln:nth-child(3) span');
+  gsap.to(oo,{yPercent:-10,yoyo:true,repeat:-1,duration:.8,ease:'sine.inOut',stagger:{each:.1,from:'start'},delay:1.2});
+  gsap.to('.hero-giant',{yPercent:12,ease:'none',scrollTrigger:{trigger:'.hero',start:'top top',end:'bottom top',scrub:true}});
+
+  /* floats + bursts */
+  gsap.utils.toArray('[data-float]').forEach(function(e,i){gsap.to(e,{y:-10,rotation:'-=6',yoyo:true,repeat:-1,duration:1.6+i*.2,ease:'sine.inOut'})});
+  gsap.utils.toArray('.burst').forEach(function(b){gsap.to(b,{rotation:360,duration:24,repeat:-1,ease:'none'})});
+
+  /* headings */
+  gsap.utils.toArray('.ttl.split').forEach(function(h){
+    if(!window.SplitText||h.querySelector('.circ')){gsap.from(h,{y:40,rotation:-3,duration:.8,ease:'back.out(2)',scrollTrigger:{trigger:h,start:'top 85%'}});return;}
+    var s=new SplitText(h,{type:'words',wordsClass:'wd'});
+    gsap.from(s.words,{yPercent:55,rotation:5,duration:.8,ease:'back.out(2)',stagger:.06,scrollTrigger:{trigger:h,start:'top 85%'}});
+  });
+  gsap.utils.toArray('.circ svg path').forEach(function(p){gsap.fromTo(p,{strokeDasharray:1,strokeDashoffset:1},{strokeDashoffset:0,duration:1.1,ease:'power2.inOut',delay:.4,scrollTrigger:{trigger:p.closest('.circ'),start:'top 85%'}})});
+
+  /* marquee */
+  ['#mq1','#mq2'].forEach(function(id,i){
+    var tw=gsap.fromTo(id,{xPercent:i?-50:0},{xPercent:i?0:-50,repeat:-1,ease:'none',duration:28});
+    ScrollTrigger.create({trigger:'.marq',start:'top bottom',end:'bottom top',onUpdate:function(s){var v=Math.min(4,1+Math.abs(s.getVelocity())/600);gsap.to(tw,{timeScale:v,duration:.3,overwrite:true});},onToggle:function(s){s.isActive?tw.play():tw.pause()}});
+  });
+
+  /* stories: progress bars + pop */
+  gsap.utils.toArray('.story').forEach(function(s,i){
+    gsap.from(s,{y:60,rotation:i%2?4:-4,duration:.9,ease:'back.out(1.8)',delay:i*.08,scrollTrigger:{trigger:'.stories',start:'top 85%'}});
+    gsap.from(s.querySelector('.bub'),{scale:.4,rotation:-16,duration:.9,ease:'elastic.out(1,.45)',delay:.3+i*.12,scrollTrigger:{trigger:'.stories',start:'top 85%'}});
+    var chr=s.querySelector('.chr'); gsap.to(chr,{y:-12,rotation:i%2?4:-4,yoyo:true,repeat:-1,duration:2+i*.3,ease:'sine.inOut'});
+  });
+
+  /* batch reveals */
+  ScrollTrigger.batch('.stg>*',{start:'top 90%',once:true,onEnter:function(b){gsap.from(b,{y:50,rotation:function(i){return i%2?5:-5},scale:.85,duration:.8,ease:'back.out(2)',stagger:.06})}});
+  gsap.utils.toArray('.lead').forEach(function(p){gsap.from(p,{y:24,duration:.7,ease:'power3.out',scrollTrigger:{trigger:p,start:'top 92%'}})});
+  ScrollTrigger.batch('.hm-row',{start:'top 92%',once:true,onEnter:function(b){gsap.from(b,{x:-40,duration:.6,ease:'back.out(2)',stagger:.07})}});
+  gsap.utils.toArray('.hm-row mark').forEach(function(m){gsap.fromTo(m,{scale:.4},{scale:1,duration:.7,ease:'elastic.out(1,.4)',scrollTrigger:{trigger:m,start:'top 88%'}})});
+  ScrollTrigger.batch('.fc',{start:'top 90%',once:true,onEnter:function(b){gsap.from(b,{rotationY:-70,y:30,duration:.9,ease:'back.out(1.8)',stagger:.1})}});
+
+  /* yes/no snakes draw */
+  gsap.utils.toArray('.yn-card .snake path').forEach(function(p){var l=p.getTotalLength();gsap.fromTo(p,{strokeDasharray:l,strokeDashoffset:l},{strokeDashoffset:0,duration:1.4,ease:'power2.out',scrollTrigger:{trigger:'.yn',start:'top 80%'}})});
+
+  /* chat: messages appear one by one */
+  var msgs=gsap.utils.toArray('#chat .msg, #chat .typing');
+  gsap.from(msgs,{y:30,scale:.6,transformOrigin:function(i,t){return t.classList.contains('out')?'100% 100%':'0 100%'},duration:.6,ease:'back.out(2.2)',stagger:.55,scrollTrigger:{trigger:'#chat',start:'top 75%'}});
+
+  /* builder visual */
+  gsap.to('.bigtalk',{rotation:-2,yoyo:true,repeat:-1,duration:2.2,ease:'sine.inOut'});
+
+  /* outro */
+  gsap.from('#outWm span',{yPercent:80,rotation:function(i){return i?10:-10},duration:1,ease:'elastic.out(1,.5)',stagger:.15,scrollTrigger:{trigger:'#outro',start:'top 70%'}});
+  gsap.from('.outro .story-end p',{y:30,duration:.6,ease:'back.out(2)',stagger:.25,scrollTrigger:{trigger:'.outro .story-end',start:'top 85%'}});
+  gsap.from('.outro .last',{scale:.5,rotation:-8,duration:1,ease:'elastic.out(1,.4)',scrollTrigger:{trigger:'.outro .last',start:'top 90%'}});
+
+  /* SCENE 1: hide */
+  makeScene(document.querySelector('[data-scene=hide]'),function(tl){
+    tl.addLabel('s0')
+      .from('#hQ',{scale:.4,rotation:-12,duration:.8,ease:'elastic.out(1,.45)'},'s0')
+      .from(['#hP1','#hP2','#hP3'],{scale:.3,autoAlpha:0,duration:.01},'s0')
+      .from('#hRu',{autoAlpha:0,duration:.01},'s0');
+    hold(tl);
+    tl.addLabel('s1').to('#hQm',{x:110,y:-90,rotation:260,scale:1.6,autoAlpha:0,duration:.9,ease:'power2.in'});
+    hold(tl,1);
+    tl.addLabel('s2').to('#hMi',{y:70,rotation:24,autoAlpha:0,duration:.8,ease:'power2.in'}).to('#hGel',{x:20,duration:.5,ease:'back.out(2)'},'<.3');
+    hold(tl,1);
+    tl.addLabel('s3').to('#hGel',{scale:.8,duration:.3}).to('#hP1',{scale:1,autoAlpha:1,duration:.8,ease:'elastic.out(1,.45)'},'<.1')
+      .fromTo('#hP1',{y:-60,rotation:-14},{y:0,rotation:0,duration:.8,ease:'bounce.out'},'<');
+    hold(tl,1.1);
+    tl.addLabel('s4').to('#hP2',{scale:1,autoAlpha:1,duration:.8,ease:'elastic.out(1,.45)'})
+      .fromTo('#hP2',{y:-60,rotation:14},{y:0,rotation:0,duration:.8,ease:'bounce.out'},'<')
+      .to('#hQ',{scale:.85,autoAlpha:.35,duration:.5},'<');
+    hold(tl,1.1);
+    tl.addLabel('s5').to('#hP3',{scale:1,autoAlpha:1,duration:.8,ease:'elastic.out(1,.45)'})
+      .fromTo('#hP3',{x:80,rotation:20},{x:0,rotation:0,duration:.7,ease:'back.out(2.2)'},'<')
+      .to('#hRu',{autoAlpha:1,duration:.4})
+      .fromTo('#hOut .chip',{y:0},{y:-10,duration:.18,yoyo:true,repeat:1,stagger:.08,ease:'power1.out'});
+  });
+
+  /* SCENE 2: factory */
+  makeScene(document.querySelector('[data-scene=factory]'),function(tl){
+    var B=['#fB1','#fB2','#fB3','#fB4','#fB5','#fB6','#fB7'];
+    tl.addLabel('s0')
+      .from(['#fA2'].concat(B).map(function(s){return document.querySelector(s).parentNode}),{autoAlpha:0,scale:.3,duration:.01},'s0')
+      .from('#fRes',{autoAlpha:0,duration:.01},'s0')
+      .from('#fB5 .gg',{autoAlpha:0,duration:.01},'s0').to('#fB5 .kk',{autoAlpha:1,duration:.01},'s0')
+      .from('#fA1',{y:-80,rotation:-20,duration:.9,ease:'bounce.out'},'s0');
+    hold(tl,1.1);
+    tl.addLabel('s1').to(document.querySelector('#fA2').parentNode,{autoAlpha:1,scale:1,duration:.8,ease:'elastic.out(1,.45)'}).fromTo('#fA2',{x:60},{x:0,duration:.6,ease:'back.out(2.5)'},'<');
+    hold(tl,1.1);
+    tl.addLabel('s2').to(['#fB1','#fB2'].map(function(s){return document.querySelector(s).parentNode}),{autoAlpha:1,scale:1,duration:.7,ease:'elastic.out(1,.45)',stagger:.25});
+    hold(tl,1);
+    tl.addLabel('s3').to(document.querySelector('#fB3').parentNode,{autoAlpha:1,scale:1,duration:.7,ease:'elastic.out(1,.4)'}).fromTo('#fB3',{y:-50},{y:0,duration:.7,ease:'bounce.out'},'<');
+    hold(tl,1);
+    tl.addLabel('s4').to(['#fB4','#fB5'].map(function(s){return document.querySelector(s).parentNode}),{autoAlpha:1,scale:1,duration:.7,ease:'elastic.out(1,.45)',stagger:.12})
+      ;
+    hold(tl,1);
+    tl.addLabel('s5').to('#fB5',{rotationX:90,duration:.25,ease:'power2.in'})
+      .to('#fB5 .kk',{autoAlpha:0,duration:.01}).to('#fB5 .gg',{autoAlpha:1,duration:.01},'<')
+      .to('#fB5',{rotationX:0,duration:.6,ease:'elastic.out(1,.4)'})
+      .to('#fB5',{backgroundColor:'#FF7664',duration:.2,yoyo:true,repeat:1},'<');
+    hold(tl,1.2);
+    tl.addLabel('s6').to(document.querySelector('#fB6').parentNode,{autoAlpha:1,scale:1,duration:.7,ease:'elastic.out(1,.45)'}).fromTo('#fB6',{x:50,rotation:20},{x:0,rotation:0,duration:.6,ease:'back.out(2.5)'},'<');
+    hold(tl,1);
+    tl.addLabel('s7').to(document.querySelector('#fB7').parentNode,{autoAlpha:1,scale:1,duration:.7,ease:'elastic.out(1,.45)'}).fromTo('#fB7',{x:50,rotation:20},{x:0,rotation:0,duration:.6,ease:'back.out(2.5)'},'<');
+    hold(tl,1.1);
+    tl.addLabel('s8').to('#fRes',{autoAlpha:1,duration:.3}).from('#fRes span',{yPercent:80,rotation:8,duration:.7,ease:'back.out(2.5)',stagger:.12,immediateRender:false},'<')
+      .fromTo('#fB .chip',{y:0},{y:-8,duration:.15,yoyo:true,repeat:1,stagger:.05},'<');
+  });
+
+  /* SCENE 3: question word */
+  makeScene(document.querySelector('[data-scene=qword]'),function(tl){
+    tl.addLabel('s0').from('#qOut .chip,#qRu',{autoAlpha:0,scale:.3,duration:.01},'s0')
+      .from('.bub.green.qbub',{scale:.4,rotation:10,duration:.8,ease:'elastic.out(1,.45)'},'s0');
+    hold(tl,1.2);
+    tl.addLabel('s1').to('#qQm',{y:-70,x:60,rotation:200,autoAlpha:0,duration:.7,ease:'power2.in'})
+      .to('#qC1',{autoAlpha:1,scale:1,duration:.7,ease:'elastic.out(1,.45)'}).fromTo('#qC1',{y:-60},{y:0,duration:.7,ease:'bounce.out'},'<');
+    hold(tl,1);
+    tl.addLabel('s2').to('#qGhost',{autoAlpha:1,scale:1,duration:.5,ease:'back.out(2)'}).to('#qGhost',{x:-4,duration:.07,yoyo:true,repeat:5});
+    hold(tl,.9);
+    tl.addLabel('s3').to('#qGhost',{y:80,rotation:-30,autoAlpha:0,duration:.7,ease:'power2.in'}).set('#qGhost',{display:'none'});
+    hold(tl,.9);
+    tl.addLabel('s4').to('#qGel',{autoAlpha:.3,duration:.3}).to('#qC2',{autoAlpha:1,scale:1,duration:.8,ease:'elastic.out(1,.45)'},'<').fromTo('#qC2',{rotation:-12},{rotation:0,duration:.6},'<');
+    hold(tl,1.1);
+    tl.addLabel('s5').to('#qC3',{autoAlpha:1,scale:1,duration:.7,ease:'elastic.out(1,.45)'}).fromTo('#qC3',{x:70},{x:0,duration:.6,ease:'back.out(2.2)'},'<').to('#qRu',{autoAlpha:1,scale:1,duration:.4});
+  });
+
+  window.addEventListener('load',function(){ScrollTrigger.refresh()});
+  if(document.fonts)document.fonts.ready.then(function(){ScrollTrigger.refresh()});
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initGSAP);else initGSAP();
+</script>
+</body>
+</html>
